@@ -3,3 +3,4 @@ TODO.md
 books/
 _rule-workbench/_resources/books/
 .DS_Store
+node_modules/
