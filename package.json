@@ -1,24 +1,23 @@
 {
   "name": "agent-rules-books",
-  "module": "index.ts",
   "type": "module",
   "private": true,
   "pi": {
     "skills": [
-      "a-philosophy-of-software-design",
-      "clean-architecture",
-      "clean-code",
-      "code-complete",
-      "designing-data-intensive-applications",
-      "domain-driven-design",
-      "domain-driven-design-distilled",
-      "implementing-domain-driven-design",
-      "patterns-of-enterprise-application-architecture",
-      "refactoring",
-      "refactoring-guru",
-      "release-it",
-      "the-pragmatic-programmer",
-      "working-effectively-with-legacy-code"
+      "./a-philosophy-of-software-design/SKILL.md",
+      "./clean-architecture/SKILL.md",
+      "./clean-code/SKILL.md",
+      "./code-complete/SKILL.md",
+      "./designing-data-intensive-applications/SKILL.md",
+      "./domain-driven-design/SKILL.md",
+      "./domain-driven-design-distilled/SKILL.md",
+      "./implementing-domain-driven-design/SKILL.md",
+      "./patterns-of-enterprise-application-architecture/SKILL.md",
+      "./refactoring/SKILL.md",
+      "./refactoring-guru/SKILL.md",
+      "./release-it/SKILL.md",
+      "./the-pragmatic-programmer/SKILL.md",
+      "./working-effectively-with-legacy-code/SKILL.md"
     ]
   },
   "devDependencies": {
