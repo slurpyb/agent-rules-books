@@ -1,0 +1,17 @@
+{
+  "name": "designing-data-intensive-applications",
+  "version": "0.6.0",
+  "description": "Apply Martin Kleppmann-inspired data-system rules when designing reliability, scalability, consistency, replication, transactions, streams, or schema evolution.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "data-systems",
+    "scalability",
+    "consistency",
+    "streams",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

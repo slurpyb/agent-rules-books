@@ -1,0 +1,17 @@
+{
+  "name": "the-pragmatic-programmer",
+  "version": "0.6.0",
+  "description": "Apply Hunt and Thomas-inspired pragmatic programming rules when improving engineering judgment, feedback loops, DRY knowledge, orthogonality, automation, or adaptability.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "pragmatic",
+    "dry",
+    "orthogonality",
+    "automation",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "refactoring-guru",
+  "version": "0.6.0",
+  "description": "Apply Refactoring.Guru-inspired rules when diagnosing code smells, choosing refactoring techniques, and stopping cleanup before uncontrolled redesign.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "refactoring",
+    "code-smells",
+    "techniques",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

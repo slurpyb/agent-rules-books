@@ -1,0 +1,16 @@
+{
+  "name": "refactoring",
+  "version": "0.6.0",
+  "description": "Apply Martin Fowler-inspired refactoring rules when improving existing code structure while preserving observable behavior.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "refactoring",
+    "code-smells",
+    "behavior-preserving",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

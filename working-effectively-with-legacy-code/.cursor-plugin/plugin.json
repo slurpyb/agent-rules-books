@@ -1,0 +1,16 @@
+{
+  "name": "working-effectively-with-legacy-code",
+  "version": "0.6.0",
+  "description": "Apply Michael Feathers-inspired legacy-code rules when changing hard-to-test code safely with characterization tests, seams, sprout methods, or wrap methods.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "legacy-code",
+    "characterization-tests",
+    "seams",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "patterns-of-enterprise-application-architecture",
+  "version": "0.6.0",
+  "description": "Apply Martin Fowler-inspired enterprise architecture rules when choosing layers, service layers, transaction scripts, domain models, repositories, mappers, or DTOs.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "enterprise",
+    "patterns",
+    "layers",
+    "repositories",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

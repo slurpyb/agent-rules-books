@@ -1,0 +1,16 @@
+{
+  "name": "code-complete",
+  "version": "0.6.0",
+  "description": "Apply Steve McConnell-inspired construction rules when implementing routines, variables, classes, control flow, defensive code, or tests.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "construction",
+    "routines",
+    "defensive-coding",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

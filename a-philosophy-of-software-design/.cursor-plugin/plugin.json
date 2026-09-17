@@ -1,0 +1,17 @@
+{
+  "name": "a-philosophy-of-software-design",
+  "version": "0.6.0",
+  "description": "Apply John Ousterhout-inspired software design rules when reducing complexity, designing module boundaries, or reviewing APIs and abstractions.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "software-design",
+    "complexity",
+    "modules",
+    "abstractions",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

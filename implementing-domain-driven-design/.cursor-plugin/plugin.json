@@ -1,0 +1,17 @@
+{
+  "name": "implementing-domain-driven-design",
+  "version": "0.6.0",
+  "description": "Apply Vaughn Vernon-inspired implementation DDD rules when building aggregates, domain events, repositories, application services, or context integrations.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "ddd",
+    "aggregates",
+    "domain-events",
+    "repositories",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}

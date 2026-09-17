@@ -1,0 +1,16 @@
+{
+  "name": "clean-architecture",
+  "version": "0.6.0",
+  "description": "Apply Robert C. Martin-inspired architecture rules when separating business policy from frameworks, databases, UI, or infrastructure details.",
+  "author": {
+    "name": "Maciej Ciemborowicz"
+  },
+  "keywords": [
+    "architecture",
+    "clean-architecture",
+    "dependency-rule",
+    "agent-rules"
+  ],
+  "homepage": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT"
+}
