@@ -1,0 +1,30 @@
+---
+description: Apply when preserving behavior, working in small steps, keeping the system runnable, or doing preparatory refactoring before feature work.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Non-Negotiable Rules
+
+1. **Preserve Behavior**
+   - Refactorings must preserve observable behavior.
+   - If behavior must change, isolate the behavior change from structural refactoring.
+   - Never disguise a feature change as a refactoring.
+
+2. **Work in Small Steps**
+   - Prefer many small safe edits over one large transformation.
+   - Each step should be understandable and reversible.
+   - If a patch feels too large to reason about locally, split it.
+
+3. **Keep the System Running**
+   - Do not leave code in a broken intermediate state unless explicitly asked for a draft.
+   - Every refactoring sequence should maintain a runnable, buildable state where practical.
+
+4. **Refactor Before and After Feature Work**
+   - If code is hard to change, first reshape it.
+   - After the feature lands, clean remaining structural debt introduced by the change.
+
+5. **Use the Simplest Helpful Refactoring**
+   - Do not introduce patterns or abstractions earlier than needed.
+   - Prefer local simplification before large-scale abstraction.
+
+---

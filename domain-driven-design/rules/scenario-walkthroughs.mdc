@@ -1,0 +1,24 @@
+---
+description: Apply when validating a model through concrete domain scenarios and examples.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Scenario Walkthroughs
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Validate the model by walking through real application scenarios.
+2. Use scenarios to test whether entities, value objects, aggregates, repositories, and factories collaborate naturally.
+3. When a scenario feels procedural or awkward, look for missing model concepts or wrong boundaries.
+4. Revisit aggregate and module boundaries after scenario walkthroughs reveal pressure.
+
+### Required behavior (MUST)
+- Prefer examples that exercise real business decisions, not only CRUD paths.
+- Use scenarios to verify object creation, lifecycle transitions, and cross-context translation.
+- Let performance tuning follow model clarity; do not distort the model prematurely for optimization.
+
+### Anti-patterns (MUST NOT)
+- Designing model elements only in isolation
+- Treating scenario code as an afterthought after infrastructure is complete
+- Optimizing persistence paths before the model expresses the business correctly
+
+---

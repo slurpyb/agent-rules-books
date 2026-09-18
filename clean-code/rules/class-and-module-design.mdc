@@ -1,0 +1,15 @@
+---
+description: Apply when keeping classes small and cohesive, shaping public APIs, or preferring composition.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Class and module design
+
+- Keep classes and modules small.
+- Each class or module should have one primary responsibility.
+- Favor high cohesion.
+- Split classes that accumulate unrelated behavior.
+- Organize code so likely changes remain local.
+- Public APIs should be small, obvious, and hard to misuse.
+- Prefer composition over complex inheritance unless inheritance is clearly the simpler and more stable model.
+- Keep constructors and setup logic from overwhelming domain behavior.

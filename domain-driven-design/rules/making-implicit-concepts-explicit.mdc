@@ -1,0 +1,24 @@
+---
+description: Apply when promoting hidden policies, constraints, or processes into named domain concepts.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Making Implicit Concepts Explicit
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Listen for domain language that is not represented in code.
+2. Scrutinize awkward APIs, repeated branches, and contradictory names.
+3. Read domain references, policies, regulations, and prior art when available.
+4. Try multiple model shapes before settling on one for complex concepts.
+
+### Required behavior (MUST)
+- Promote hidden constraints, policies, and processes into explicit domain concepts.
+- Name the concept before choosing the implementation form.
+- Prefer clear domain objects over anonymous helpers when behavior has business meaning.
+
+### Anti-patterns (MUST NOT)
+- Burying business rules in comments
+- Treating contradictions as edge cases instead of modeling signals
+- Keeping vague technical flags after discovering the real concept
+
+---

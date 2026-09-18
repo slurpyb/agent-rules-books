@@ -1,0 +1,15 @@
+---
+description: Apply when cleaning structure during change while keeping tests green and steps small.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Refactoring rules
+
+- Refactor in small, safe steps.
+- Preserve behavior while improving structure.
+- First make it work, then make it right.
+- Remove duplication, dead code, misleading abstractions, and special-case clutter.
+- Rename aggressively when names are weak.
+- Extract code when doing so improves cohesion and clarity.
+- Inline abstractions that no longer earn their cost.
+- Prefer the simplest design that passes all relevant tests.

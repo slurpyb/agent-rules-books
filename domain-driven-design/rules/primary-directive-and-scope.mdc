@@ -1,0 +1,72 @@
+---
+description: Apply when deciding whether DDD is warranted, preferring model clarity over CRUD/framework convenience, or rejecting ceremonial layering.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Primary Directive and Scope
+
+## Purpose
+
+This repository follows **Domain-Driven Design**.
+All code generation, modification, and review must optimize for:
+- a precise model of the domain
+- a shared ubiquitous language
+- explicit bounded contexts
+- rich domain behavior where complexity exists
+- disciplined aggregate design
+- protection of invariants
+- clear separation between domain model and supporting infrastructure
+
+This file is a binding engineering policy: `MUST` is binding, `SHOULD` is a strong default, and `MUST NOT` is forbidden.
+
+---
+
+## Primary Directive
+
+When uncertain, prefer the option that makes the **domain model clearer**.
+
+Do not optimize primarily for:
+- fewer files
+- generic reuse
+- CRUD convenience
+- object-relational mapping convenience
+- delivery-layer convenience
+- framework conventions
+- short-term speed at the cost of model clarity
+
+The model must serve the business meaning first.
+
+---
+
+## What DDD Means in This Repository
+
+DDD here does **not** mean:
+- adding layers for ceremony
+- renaming service classes to sound sophisticated
+- wrapping CRUD in verbose abstractions
+- creating entities with only fields and setters
+- turning every concept into an aggregate
+- introducing every DDD pattern everywhere
+- overengineering simple subdomains
+
+DDD here **does** mean:
+- building code around business concepts
+- expressing rules in domain language
+- making context boundaries explicit
+- protecting invariants with the model
+- modeling identity, value, lifecycle, and consistency deliberately
+- translating explicitly across context boundaries
+- simplifying aggressively outside the core domain
+
+---
+
+## Final Instruction
+
+When uncertain, choose the option that:
+1. makes the domain language sharper
+2. protects invariants inside the model
+3. keeps bounded contexts explicit
+4. reduces primitive obsession
+5. keeps infrastructure subordinate to domain meaning
+
+Reject changes that make the code more generic but the domain less clear.

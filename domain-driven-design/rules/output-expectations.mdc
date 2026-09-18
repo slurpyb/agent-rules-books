@@ -1,0 +1,39 @@
+---
+description: Apply when producing DDD design or implementation output that must state language, context, and invariants explicitly.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Output Expectations
+
+When asked to implement a feature, default to producing:
+- bounded context ownership
+- domain terms first
+- entities or value objects where justified
+- aggregates when invariants require a consistency boundary
+- specifications or policies when named rules must be evaluated or combined
+- repositories for aggregate persistence
+- factories when creation is non-trivial
+- application services for orchestration
+- explicit translation at external boundaries
+- visible context relationship choices when integrating with other models
+- simpler supporting or generic subdomain designs when rich modeling is not justified
+
+When asked to review code:
+- identify model-language mismatch
+- identify missing value objects
+- identify passive data-structure model symptoms
+- identify bad aggregate boundaries
+- identify context leakage
+- identify infrastructure-driven modeling
+- identify missing explicit constraints or specifications
+- identify weak core-domain distillation
+- identify context map and large-scale structure problems
+- propose concrete DDD refactorings
+
+When asked to modify code:
+- improve the model first where safe
+- do not deepen technical shortcuts that weaken the domain language
+- keep business meaning more explicit after the change than before it
+- preserve the model's strategic priorities
+
+---

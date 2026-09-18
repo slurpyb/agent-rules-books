@@ -1,0 +1,39 @@
+---
+description: Apply when hunting Clean Code smells: rigidity, opacity, duplication, feature envy, dead code, and related local decay.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Smells to detect and eliminate
+
+Actively look for and fix these issues when touching code:
+
+- vague or misleading names
+- duplicated logic
+- oversized functions
+- oversized classes or modules
+- mixed abstraction levels
+- hidden side effects
+- boolean control flags
+- long parameter lists
+- deep nesting
+- excessive conditionals that should be isolated or polymorphic
+- comment-heavy code that should be refactored instead
+- dead code and unused abstractions
+- fragile tests
+- environment-dependent tests without need
+- unnecessary indirection
+- accidental complexity
+- coupling that spreads change broadly
+- build or tests requiring more than one manual step
+- code at the wrong level of abstraction
+- base classes depending on derivatives
+- transitive navigation through object internals
+- artificial coupling between unrelated concepts
+- hidden logical dependencies
+- unimplemented obvious behavior
+- incorrect boundary behavior
+- overridden safeties
+- magic numbers without named meaning
+- negative conditionals that obscure intent
+- ignored tests and insufficient boundary tests
+- functions that require readers to understand an algorithm before they can trust the name

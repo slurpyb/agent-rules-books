@@ -312,17 +312,18 @@ Suggested split:
 - `refactor.mdc`: `Apply Manually` for explicit refactoring passes
 - `ddd.mdc`: `Apply Intelligently` for modeling-heavy tasks
 
-### Worked example: The Pragmatic Programmer
+### Worked examples: Cursor book plugins
 
-[`the-pragmatic-programmer/`](../the-pragmatic-programmer/) is a full Cursor plugin:
+These book directories ship as full Cursor plugins (skill + Apply Intelligently rules + read-only review subagent):
 
-| Piece | Path | Use |
-| --- | --- | --- |
-| Skill | [`skills/the-pragmatic-programmer/`](../the-pragmatic-programmer/skills/the-pragmatic-programmer/) | Explicit pragmatic workflow (`mini`, with `full` as reference) |
-| Rules | [`rules/`](../the-pragmatic-programmer/rules/) | Many Apply Intelligently `.mdc` topic rules from the full source |
-| Subagent | [`agents/pragmatic-reviewer.md`](../the-pragmatic-programmer/agents/pragmatic-reviewer.md) | Read-only pragmatic audit in an isolated context |
+| Book | Skill | Rules | Subagent |
+| --- | --- | --- | --- |
+| [The Pragmatic Programmer](../the-pragmatic-programmer/) | [`skills/the-pragmatic-programmer/`](../the-pragmatic-programmer/skills/the-pragmatic-programmer/) | [`rules/`](../the-pragmatic-programmer/rules/) | [`pragmatic-reviewer`](../the-pragmatic-programmer/agents/pragmatic-reviewer.md) |
+| [Refactoring](../refactoring/) | [`skills/refactoring/`](../refactoring/skills/refactoring/) | [`rules/`](../refactoring/rules/) | [`refactoring-reviewer`](../refactoring/agents/refactoring-reviewer.md) |
+| [Clean Code](../clean-code/) | [`skills/clean-code/`](../clean-code/skills/clean-code/) | [`rules/`](../clean-code/rules/) | [`clean-code-reviewer`](../clean-code/agents/clean-code-reviewer.md) |
+| [Domain-Driven Design](../domain-driven-design/) | [`skills/domain-driven-design/`](../domain-driven-design/skills/domain-driven-design/) | [`rules/`](../domain-driven-design/rules/) | [`ddd-reviewer`](../domain-driven-design/agents/ddd-reviewer.md) |
 
-Each rule sets `alwaysApply: false` and a concrete `description` so Cursor can attach DRY, orthogonality, tracer bullets, automation, contracts, testing, and related pressure by task topic. Use the skill for implementation work, the rules for opportunistic attachment, and `pragmatic-reviewer` when you want an independent checklist pass without flooding the main chat.
+Each rule sets `alwaysApply: false` and a concrete `description` so Cursor can attach topic pressure by task. Use the skill for implementation work, the rules for opportunistic attachment, and the reviewer subagent for an independent checklist pass without flooding the main chat.
 
 ### Use Cursor this way when
 

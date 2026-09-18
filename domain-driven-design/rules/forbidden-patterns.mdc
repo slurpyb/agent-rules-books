@@ -1,0 +1,55 @@
+---
+description: Apply when spotting fake DDD, anemic domain models, context mush, or infrastructure-driven design.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Forbidden Patterns
+
+Do not generate or keep these patterns unless explicitly required and justified.
+
+### Passive Domain Model
+- entities with fields and setters but no real behavior in a complex domain
+- all rules living in application services or UI handlers
+
+### Smart UI
+- UI or application code making domain decisions
+- request handlers enforcing core invariants
+
+### Persistence-Driven Design
+- aggregate boundaries chosen for persistence convenience
+- entities shaped around table structures
+- domain types depending on persistence mechanics
+
+### Primitive Obsession
+- raw strings, ints, decimals, and datetimes everywhere for meaningful concepts
+- repeated validation logic for the same primitive concept
+
+### Shared Model Everything
+- one giant shared domain model across contexts
+- common abstractions that erase business distinctions
+
+### God Services
+- single `*Service` classes containing many unrelated policies and workflows
+- procedural orchestration replacing domain behavior
+
+### Invalid Construction
+- partially initialized aggregates
+- public state changes that bypass invariants
+- allowing impossible states because later code will fix them
+
+### Fake DDD
+- renaming CRUD layers without changing the model
+- adding repositories, factories, and services without real domain need
+- over-modeling simple supporting subdomains
+
+### Context Map Blindness
+- integrations with no explicit relationship strategy
+- foreign models imported directly into the local core
+- shared code treated as neutral when it actually carries another context's language
+
+### Pattern-Driven Obscurity
+- design patterns that make the domain language harder to see
+- frameworks or DSLs that make simple rules harder to verify
+- large-scale structures that prevent model evolution
+
+---

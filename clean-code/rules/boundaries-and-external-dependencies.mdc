@@ -1,0 +1,12 @@
+---
+description: Apply when wrapping third-party APIs, isolating frameworks, or keeping boundary learning out of core logic.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Boundaries and external dependencies
+
+- Isolate third-party libraries behind local adapters or wrappers when practical.
+- Avoid coupling core logic directly to unstable external APIs.
+- Create narrow interfaces around dependencies.
+- Add learning tests or focused integration tests for tricky external behavior.
+- When a dependency does not exist yet, define interfaces from local needs, not from guesses about future implementations.

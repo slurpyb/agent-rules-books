@@ -1,7 +1,7 @@
 {
   "name": "refactoring",
-  "version": "0.6.0",
-  "description": "Apply Martin Fowler-inspired refactoring rules when improving existing code structure while preserving observable behavior.",
+  "version": "0.7.0",
+  "description": "Refactoring skill, granular Cursor rules, and a read-only refactoring-reviewer subagent for behavior-preserving structural improvement.",
   "author": {
     "name": "Maciej Ciemborowicz"
   },
@@ -9,7 +9,10 @@
     "refactoring",
     "code-smells",
     "behavior-preserving",
-    "agent-rules"
+    "agent-rules",
+    "skill",
+    "subagent",
+    "code-review"
   ],
   "homepage": "https://github.com/ciembor/agent-rules-books",
   "license": "MIT"

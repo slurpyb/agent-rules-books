@@ -1,0 +1,40 @@
+---
+description: Apply when choosing context relationships (shared kernel, customer/supplier, anticorruption layer, open host, etc.).
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Model Integrity Patterns
+
+### Continuous Integration Within a Context
+1. A bounded context must keep one internally consistent model.
+2. Team members working in the same context must integrate terminology and model changes continuously.
+3. Conflicting meanings inside one context must be resolved quickly through naming, tests, and refactoring.
+
+### Context Relationships
+Use context relationship patterns intentionally:
+- `Shared Kernel` only for a small, jointly governed model subset.
+- `Customer/Supplier` when an upstream team commits to downstream needs.
+- `Conformist` only when adopting the upstream model is cheaper than translating it.
+- `Anticorruption Layer` when protecting the local model from a foreign or legacy model.
+- `Separate Ways` when integration cost is higher than shared capability value.
+- `Open Host Service` when a context exposes a stable integration protocol.
+- `Published Language` when contexts need a documented exchange language.
+
+### Context Transformations
+1. Move from Separate Ways to Shared Kernel only when the overlap is small, valuable, and worth coordination.
+2. Move from Shared Kernel to Continuous Integration only when teams are ready to share one model frequently.
+3. Phase out legacy systems by protecting the new model and replacing responsibilities incrementally through translations.
+4. Evolve Open Host Service toward Published Language when interchange stability is needed beyond one service.
+
+### Required behavior (MUST)
+- Make context maps visible in package structure, integration adapters, documentation, or tests.
+- Name adapters after the relationship they implement when that improves clarity.
+- Keep foreign model terms out of the local core unless deliberately accepted as conformist.
+
+### Anti-patterns (MUST NOT)
+- Accidental shared kernels with no ownership rules
+- Calling every integration an anticorruption layer without translation
+- Letting upstream APIs silently define downstream domain language
+- Treating context mapping as architecture documentation only, not code structure
+
+---

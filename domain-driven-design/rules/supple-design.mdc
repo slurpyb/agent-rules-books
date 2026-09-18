@@ -1,0 +1,32 @@
+---
+description: Apply when making the model intention-revealing, side-effect-free where practical, and easier to combine.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Supple Design
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Design interfaces that reveal intention in domain language.
+2. Prefer side-effect-free functions for calculations and queries.
+3. Make assertions and invariants explicit in the model.
+4. Shape objects around conceptual contours, not arbitrary technical convenience.
+5. Use standalone classes where a concept can be understood without unnecessary dependencies.
+6. Favor operations that are closed under meaningful domain types when that improves clarity.
+7. Use declarative design when it makes rules easier to read, combine, and verify.
+8. Combine specifications with AND, OR, or NOT only while each component meaning remains readable.
+9. Use subsumption when one specification or category includes another and that relationship matters.
+
+### Required behavior (MUST)
+- Name methods after what the business is trying to accomplish.
+- Separate commands from queries where side effects would surprise readers.
+- Put invariant checks where invalid states enter the model.
+- Look for cohesive concepts hidden inside long methods, conditionals, or parameter groups.
+- Consider a domain-specific language only when it simplifies real domain expression.
+
+### Anti-patterns (MUST NOT)
+- Technically named APIs that hide intent
+- Methods that both ask a question and mutate domain state
+- Invariants expressed only in comments or UI/application validation
+- Declarative frameworks that obscure rather than clarify business rules
+
+---

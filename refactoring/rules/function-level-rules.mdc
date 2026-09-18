@@ -1,0 +1,16 @@
+---
+description: Apply when extracting, simplifying, or reshaping functions during refactoring.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Function-Level Rules
+
+1. One function should usually perform one coherent task.
+2. Keep abstraction level consistent inside a function.
+3. Remove hidden side effects unless the function's purpose is to cause them.
+4. Prefer guard clauses over deeply nested conditionals when that clarifies the happy path.
+5. Split phases like parsing, validation, computation, and I/O when they are mixed together.
+6. Keep variable scope tight.
+7. Delete dead code rather than comment it out.
+
+---

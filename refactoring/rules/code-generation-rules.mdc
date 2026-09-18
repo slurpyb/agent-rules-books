@@ -1,0 +1,32 @@
+---
+description: Apply when generating or scaffolding refactored code that must preserve behavior and stay in small steps.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Code Generation Rules
+
+When asked to modify existing code, use this default order:
+1. understand current behavior
+2. identify the friction for the requested change
+3. add or improve the safety net if needed
+4. perform preparatory refactoring
+5. implement the behavioral change
+6. perform follow-up cleanup
+7. stop when the design is clearly better
+
+Preferred first moves:
+- rename badly named things
+- extract coherent functions
+- isolate side effects
+- split mixed responsibilities
+- move behavior closer to the owning concept
+- remove duplication
+- simplify conditionals
+
+Preferred avoidance:
+- unnecessary framework migrations
+- gratuitous API redesign
+- large hierarchy introduction
+- replacing all old code with new code because the old code is ugly
+
+---

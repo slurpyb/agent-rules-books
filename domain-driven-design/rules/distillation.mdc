@@ -1,0 +1,33 @@
+---
+description: Apply when distilling the core domain and isolating supporting/generic complexity.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Distillation
+
+### Core Domain
+1. Identify the part of the model that creates strategic advantage.
+2. Put the strongest modeling effort and cleanest design into that core.
+3. Do not bury the core under generic mechanisms, infrastructure, or broad shared abstractions.
+
+### Distillation Patterns
+Use these patterns when they clarify priority and investment:
+- `Domain Vision Statement` for a short statement of the core model's purpose.
+- `Highlighted Core` to mark the most important elements inside a larger model.
+- `Generic Subdomain` for commodity capabilities that do not deserve rich custom modeling.
+- `Cohesive Mechanism` for technical mechanisms that can be separated from domain policy.
+- `Segregated Core` when the core is tangled with supporting concerns.
+- `Abstract Core` when related specialized models need a stable conceptual foundation.
+
+### Required behavior (MUST)
+- Make the core domain easy to find in code.
+- Keep supporting and generic subdomains simpler unless their complexity is real.
+- Choose refactoring targets based on strategic importance, not just local messiness.
+
+### Anti-patterns (MUST NOT)
+- Spending equal modeling effort on every subsystem
+- Letting technical mechanisms dominate the core model
+- Hiding the core behind generic shared packages
+- Refactoring peripheral code while the core remains unclear
+
+---

@@ -1,0 +1,26 @@
+---
+description: Apply when modeling policies, specifications, or explicit domain rules as first-class concepts.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Explicit Concepts and Specifications
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Make implicit constraints explicit in the model.
+2. Model domain processes as domain objects when the process has business meaning.
+3. Use specifications for named, combinable business rules that answer whether something satisfies a criterion.
+4. Keep specifications in domain language, not query language.
+
+### Required behavior (MUST)
+- Extract repeated conditionals into named domain concepts.
+- Prefer named concepts such as route specifications, overbooking policies, or allocation rules over anonymous boolean expressions.
+- Keep persistence querying concerns separate from domain specifications unless the project deliberately provides translation.
+- Use specifications to clarify policy, validation, selection, and compatibility rules.
+
+### Anti-patterns (MUST NOT)
+- Complex business conditions duplicated across services
+- Boolean flags that hide a named domain rule
+- Specifications that are just persistence query builders
+- Processes represented only as scripts or transaction handlers when the business treats them as concepts
+
+---

@@ -1,0 +1,25 @@
+---
+description: Apply as a final gate before finishing a refactoring: behavior preserved, steps small, smells reduced, tests green.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Change Checklist
+
+## Review Checklist
+
+Before finalizing any change, verify:
+- Did we preserve observable behavior during refactoring?
+- Did we separate structural change from behavior change where practical?
+- Did we remove at least one real source of friction?
+- Is the code easier to read than before?
+- Is the code easier to test or change than before?
+- Did we reduce duplication or accidental complexity?
+- Did we avoid speculative abstraction?
+- Did we avoid a giant mixed patch?
+- Did names improve?
+- Did control flow become simpler?
+- Did responsibilities become clearer?
+
+If any answer is no, revise before shipping.
+
+---

@@ -1,7 +1,7 @@
 {
   "name": "domain-driven-design",
-  "version": "0.6.0",
-  "description": "Apply Eric Evans-inspired DDD rules when modeling a complex domain, defining bounded contexts, protecting ubiquitous language, or designing aggregates.",
+  "version": "0.7.0",
+  "description": "Domain-Driven Design skill, granular Cursor rules, and a read-only ddd-reviewer subagent for model clarity, bounded contexts, and tactical patterns.",
   "author": {
     "name": "Maciej Ciemborowicz"
   },
@@ -10,7 +10,10 @@
     "bounded-contexts",
     "ubiquitous-language",
     "aggregates",
-    "agent-rules"
+    "agent-rules",
+    "skill",
+    "subagent",
+    "code-review"
   ],
   "homepage": "https://github.com/ciembor/agent-rules-books",
   "license": "MIT"

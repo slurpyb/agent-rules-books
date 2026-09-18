@@ -1,0 +1,33 @@
+---
+description: Apply when imposing large-scale structure across many contexts without erasing local models.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Large-Scale Structure
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Large-scale structure should help people understand the system, not freeze it.
+2. Let structure evolve as the model evolves.
+3. Use a guiding structure only when it reduces cognitive load across contexts.
+4. Keep the structure minimally restrictive.
+
+### Patterns
+Use these patterns deliberately:
+- `Evolving Order` when structure must emerge through iterative modeling.
+- `System Metaphor` only when it genuinely clarifies the model.
+- `Responsibility Layers` when responsibilities naturally stratify across the system.
+- `Knowledge Level` when rules or policies must be represented explicitly and changed by configuration or data.
+- `Pluggable Component Framework` when variation points are stable and worth formalizing.
+
+### Required behavior (MUST)
+- Combine bounded contexts, distillation, and large-scale structure into one coherent strategy.
+- Revisit structure when it no longer fits the model.
+- Prefer communication and self-discipline over heavy structural machinery where possible.
+
+### Anti-patterns (MUST NOT)
+- A master plan that blocks model learning
+- A metaphor that sounds clever but misleads design decisions
+- Overly restrictive layers that fight the domain
+- Framework architecture masquerading as domain structure
+
+---

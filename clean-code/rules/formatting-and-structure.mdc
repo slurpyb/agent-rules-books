@@ -1,0 +1,16 @@
+---
+description: Apply when ordering files vertically, keeping related concepts close, or formatting for scannability.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Formatting and structure
+
+- Use consistent formatting across the repository.
+- Format code to reveal structure and intent.
+- Keep related concepts close together.
+- Keep files, classes, and functions reasonably small.
+- Use vertical ordering to tell the story from higher level to lower level.
+- Use indentation to clarify scope, not to hide complexity.
+- Avoid excessive line length when it hurts readability.
+- Avoid decorative alignment that is brittle during edits.
+- Preserve a layout that supports fast scanning.

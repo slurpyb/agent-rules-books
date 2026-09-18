@@ -1,0 +1,28 @@
+---
+description: Apply when placing domain behavior that does not naturally belong on an entity or value object.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Domain Services
+
+### Use a domain service only when
+- the behavior is domain-significant
+- the behavior does not naturally belong on one entity or value object
+- the operation still belongs to the ubiquitous language
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. A domain service must express a domain concept, not a technical convenience.
+2. If behavior clearly belongs to an entity or value object, keep it there.
+3. Do not move behavior into services merely to keep entities thin.
+
+### Required behavior (MUST)
+- Domain services should sound like the business.
+- Domain services should coordinate domain concepts, not infrastructure details.
+
+### Anti-patterns (MUST NOT)
+- a single `*Service` containing all rules for a model area
+- a service containing dozens of unrelated policies
+- “Domain services” that are only wrappers for repositories or external technical clients
+- Extracting behavior from entities prematurely
+
+---

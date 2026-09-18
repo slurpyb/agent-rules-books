@@ -1,0 +1,24 @@
+---
+description: Apply when keeping diagrams and docs lightweight, current, and tied to the implementation model.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Communication Artifacts
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Documents and diagrams must support the ubiquitous language.
+2. Written design material must be short enough to stay maintained.
+3. Executable tests are preferred for rules that can be verified.
+4. Diagrams should emphasize boundaries, relationships, invariants, and lifecycle over class inventory.
+
+### Required behavior (MUST)
+- Use examples and scenario tests as living documentation.
+- Keep glossary-like explanations close to the bounded context they describe.
+- Update documents when terminology or context boundaries change.
+
+### Anti-patterns (MUST NOT)
+- Long design documents that drift away from code
+- Diagrams that show every class but hide the model's meaning
+- Documentation that introduces vocabulary not used by code or tests
+
+---

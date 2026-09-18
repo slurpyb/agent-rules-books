@@ -1,0 +1,30 @@
+---
+description: Apply as a final Clean Code gate before shipping: names, size, side effects, tests, and scoped cleanup.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Change Checklist
+
+## Review checklist
+
+Before finishing, verify all of the following:
+
+- Names reveal intent.
+- Functions are small and focused.
+- Classes and modules have clear responsibilities.
+- Comments are necessary and accurate.
+- Error handling is explicit and useful.
+- Duplication was removed where reasonable.
+- Tests cover the changed behavior appropriately.
+- The code reads cleanly from top to bottom.
+- The design is simpler or at least not more complex than before.
+- The change follows existing project conventions.
+
+## Output Expectations
+
+When making changes:
+
+- Briefly explain what changed.
+- State what tests or checks were run.
+- Call out any unresolved risk, assumption, or trade-off.
+- If a requested change conflicts with these rules, follow the user request but mention the conflict explicitly.

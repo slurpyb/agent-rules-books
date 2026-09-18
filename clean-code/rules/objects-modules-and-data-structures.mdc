@@ -1,0 +1,15 @@
+---
+description: Apply when separating objects from data structures, hiding representation, or avoiding train-wreck chains.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Objects, modules, and data structures
+
+- Separate behavior-rich objects from plain data carriers intentionally.
+- Do not mix data containers and business behavior arbitrarily.
+- Hide implementation details behind clear interfaces.
+- Expose behavior, not representation.
+- Use DTO-like structures as simple carriers when appropriate.
+- Avoid train-wreck call chains and unnecessary knowledge of internal structure.
+- Respect loose coupling and local boundaries.
+- Keep persistence, framework, and third-party details from obscuring business behavior or core logic.

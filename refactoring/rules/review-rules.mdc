@@ -1,0 +1,23 @@
+---
+description: Apply when reviewing a refactoring diff for behavior preservation, step size, and smell reduction.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Review Rules
+
+When reviewing or generating changes, actively look for:
+- duplicated logic
+- long functions
+- long classes
+- tangled control flow
+- mixed abstraction levels
+- feature envy
+- shotgun surgery
+- divergent change
+- pass-through layers
+- speculative generality
+- hidden side effects
+- global state reliance
+- code that requires too much context to change safely
+
+---

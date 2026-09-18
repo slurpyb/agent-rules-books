@@ -1,0 +1,32 @@
+---
+description: Apply when modeling identity, lifecycle, and continuity with entities.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Entities
+
+### Use entities when
+- identity matters over time
+- lifecycle matters
+- continuity matters beyond current attributes
+- business rules depend on “which one” rather than only “what value”
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Entities must have explicit identity.
+2. Entities must protect their own valid state transitions.
+3. Entities must expose intention-revealing behavior, not arbitrary state changes.
+4. Entities must not be treated as passive records in behavior-rich domains.
+
+### Required behavior (MUST)
+- Prefer methods that tell an entity what domain action to perform.
+- In a shipping model, express destination changes and handling-event additions as model operations rather than procedural data edits.
+- Hide direct state changes behind methods that encode domain meaning.
+- Keep identity stable and explicit.
+
+### Anti-patterns (MUST NOT)
+- Public setters for every field
+- Application services manually editing all entity state
+- UI or application code deciding which transitions are valid
+- Entities used only as persistence shells
+
+---

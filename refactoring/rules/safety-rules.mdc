@@ -1,0 +1,29 @@
+---
+description: Apply when establishing characterization tests, safety nets, commit discipline, or preparatory refactoring before risky structural change.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Safety Rules
+
+### Tests and Verification
+1. Create or identify a safety net before risky refactoring.
+2. Prefer characterization tests when working on unclear existing behavior.
+3. If tests are absent, make the smallest changes possible and improve testability first.
+4. Keep refactoring and test updates aligned with preserved behavior.
+5. Never delete a failing test just to complete a refactoring.
+
+### Commit and Patch Discipline
+1. Separate structural edits from behavior changes whenever practical.
+2. Group related refactorings together.
+3. Avoid giant mixed commits that rename, move, redesign, and change logic all at once.
+4. Prefer reviewable sequences of transformations.
+
+### Preparatory Refactoring
+Before implementing a feature, ask:
+- what makes this change awkward?
+- what local structural change would make it straightforward?
+- can I rename, extract, move, split, or inline first?
+
+Do the preparatory refactoring before the feature change.
+
+---

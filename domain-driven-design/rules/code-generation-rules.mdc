@@ -1,0 +1,55 @@
+---
+description: Apply when generating domain code that must express language, boundaries, and invariants correctly.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Code Generation Rules
+
+When generating code, always do the following in order.
+
+### 1. Identify the domain concept first
+Before writing code, identify:
+- the bounded context
+- the domain term
+- whether the concept is an entity, value object, aggregate, domain service, repository, factory, or specification
+- which invariants matter
+
+Do not start from:
+- delivery code
+- the persistence model
+- the database schema
+- the REST shape
+unless the task is purely infrastructural.
+
+### 2. Prefer modeling over generic plumbing
+If the domain contains real rules:
+- put behavior in the model
+- introduce value objects
+- define aggregate boundaries
+- use domain language in APIs
+
+Do not default to procedural services operating on passive records.
+
+### 3. Use primitives only when they truly carry no domain meaning
+Wrap primitives when meaning, validation, unit semantics, or invariants matter.
+
+### 4. Protect invariants at the model boundary
+Do not rely on UI validation, application validation, or repository validation as the primary protection for business rules.
+
+### 5. Keep the model persistence-ignorant
+Do not shape types or boundaries primarily for object-relational mapping convenience.
+
+### 6. Keep bounded contexts visible in structure
+Prefer feature or context ownership in modules and packages.
+Avoid architecture that hides business boundaries behind generic folders.
+
+### 7. Translate foreign models explicitly
+Whenever another context, system, transport layer, or persistence format is involved, create translation rather than leakage.
+
+### 8. Look for implicit concepts
+When conditionals, flags, validation blocks, or repeated calculations express business meaning, extract named concepts such as value objects, policies, specifications, or domain services.
+
+### 9. Preserve strategic priorities
+Give the core domain more modeling care than supporting or generic subdomains. Keep context relationships and distillation choices visible when they affect code.
+
+---

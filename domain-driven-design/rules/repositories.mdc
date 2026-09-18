@@ -1,0 +1,34 @@
+---
+description: Apply when retrieving aggregates, preserving model access patterns, or avoiding leaking persistence into the domain.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Repositories
+
+### Purpose
+Repositories provide access to aggregates as part of the model.
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Repositories exist for aggregate roots, not for every table.
+2. Repository interfaces must be defined by the domain or application model that uses them.
+3. Repositories must return domain objects or domain-oriented results.
+4. Repository contracts must reflect intent where useful.
+5. Repositories must not become universal query utilities.
+
+### Required behavior (MUST)
+- Use repositories to reconstitute and persist aggregates.
+- Keep infrastructure mapping hidden behind the repository implementation.
+- Prefer focused repository methods over giant generic CRUD interfaces when domain intent matters.
+- Keep reconstitution paths separate from normal creation paths when that protects invariants.
+- Make client code independent of repository implementation details, while repository implementers understand those details.
+- Express query criteria as specifications or model concepts when the criteria are domain rules.
+- Return domain objects or collections without exposing database structure.
+
+### Anti-patterns (MUST NOT)
+- Generic repository abstractions that erase domain meaning
+- Returning persistence records directly into the domain
+- Putting business rules into repository implementations
+- Creating one repository per table with no relation to aggregate design
+- Letting relational database design dictate object identity, associations, or aggregate boundaries
+
+---

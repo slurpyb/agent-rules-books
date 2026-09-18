@@ -1,0 +1,24 @@
+---
+description: Apply when translating between bounded contexts without contaminating models.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Translation at Boundaries
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Translation is mandatory at context boundaries.
+2. Translation is usually mandatory between domain objects and transport or persistence representations.
+3. Anti-corruption layers must preserve the local model rather than mirror foreign models.
+4. Foreign terms must not silently invade the local ubiquitous language.
+
+### Required behavior (MUST)
+- Translate external IDs, statuses, and vocabularies explicitly.
+- Map transport representations to local commands or domain inputs.
+- Keep persistence models and integration models outside the core domain.
+
+### Anti-patterns (MUST NOT)
+- Passing external API models deep into the domain
+- Reusing one representation as delivery input, persistence record, domain object, and integration message
+- Adopting vendor status codes as native domain terminology
+
+---

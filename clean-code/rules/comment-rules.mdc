@@ -1,0 +1,21 @@
+---
+description: Apply when writing, keeping, or removing comments; prefer self-explanatory code over narrative comments.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Comment rules
+
+- Do not use comments to compensate for bad naming or bad structure.
+- First improve the code, then decide whether a comment is still needed.
+- Prefer self-explanatory code.
+- Use comments only when they add information the code cannot express well.
+- Good comment categories include:
+  - legal or licensing requirements
+  - non-obvious intent
+  - important warnings or constraints
+  - rationale for a surprising decision
+  - clarification of external behavior or protocol assumptions
+- Remove redundant, obsolete, obvious, noisy, and misleading comments.
+- Do not narrate the code line by line.
+- Keep comments precise and maintain them when code changes.
+- Avoid TODO comments unless they are actionable, specific, and necessary.

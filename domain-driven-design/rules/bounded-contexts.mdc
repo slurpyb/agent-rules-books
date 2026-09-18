@@ -1,0 +1,26 @@
+---
+description: Apply when defining, naming, or protecting a bounded context and its model boundary.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Bounded Contexts
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Every substantial domain area must belong to a clearly identified bounded context.
+2. A model is valid only inside its own bounded context.
+3. Concepts from another context must not be imported directly as if they were native.
+4. Translation across contexts must be explicit.
+5. Shared models across multiple contexts are forbidden unless intentionally governed as a shared kernel.
+
+### Required behavior (MUST)
+- Keep package, module, or namespace ownership explicit.
+- Model `Customer` separately in different contexts if meanings differ.
+- Prefer context-specific contracts, IDs, published language, or anticorruption layers over shared classes.
+
+### Anti-patterns (MUST NOT)
+- One giant company-wide domain model
+- A `shared/domain` package that erases boundaries
+- Copying foreign terms into the local model without translation
+- Reusing one aggregate type across unrelated contexts
+
+---

@@ -1,0 +1,14 @@
+---
+description: Apply when encapsulating fields, reducing mutable shared state, or replacing data clumps during refactoring.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Data and Mutation Rules
+
+1. Encapsulate mutation.
+2. Narrow write access to the smallest useful surface.
+3. Replace ad hoc mutations with intention-revealing operations.
+4. Remove duplicated update logic by centralizing state transitions.
+5. Prefer immutable intermediate values when that simplifies reasoning.
+
+---

@@ -1,0 +1,34 @@
+---
+description: Apply when testing domain behavior, invariants, and scenario examples rather than persistence plumbing.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Testing Rules
+
+### Domain tests first
+Prioritize tests for:
+- entity invariants
+- value object validity
+- aggregate behavior
+- domain services
+- specifications and explicit constraints
+- application-layer orchestration
+- context translation and anticorruption layers
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Tests must read in the ubiquitous language.
+2. Tests must verify allowed and forbidden state transitions.
+3. Tests must verify that invalid objects cannot be created through supported paths.
+4. Tests must verify translation behavior where anticorruption layers exist.
+5. Infrastructure tests must stay separate from domain tests.
+6. Tests for the core domain should read like executable examples of the model.
+7. Test context boundaries so translations preserve intended meaning.
+8. Test that one context does not silently break another context's assumptions.
+
+### Anti-patterns (MUST NOT)
+- Tests named in transport or delivery vocabulary instead of domain vocabulary
+- Tests that verify persistence details instead of domain meaning
+- Missing tests for invalid transitions and invariant protection
+- Tests that validate generic plumbing while leaving core policy untested
+
+---

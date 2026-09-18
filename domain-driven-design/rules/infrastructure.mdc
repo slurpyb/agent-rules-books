@@ -1,0 +1,20 @@
+---
+description: Apply when isolating persistence, messaging, and framework details from the domain model.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Infrastructure
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Infrastructure is subordinate to the model.
+2. Object-relational mappings, serializers, external technical clients, delivery mechanisms, messaging details, caches, and framework types must stay out of the domain model.
+3. Infrastructure must adapt to the model, not the reverse.
+4. Persistence shape must not define the domain shape.
+
+### Anti-patterns (MUST NOT)
+- Naming domain concepts after database tables
+- Designing aggregates around lazy loading
+- Adding methods to entities only because the persistence mechanism needs them
+- Letting transport representations become domain objects
+
+---

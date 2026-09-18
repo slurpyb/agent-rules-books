@@ -1,0 +1,27 @@
+---
+description: Apply when prioritizing modeling investment where business differentiation is highest.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Strategic Decision Making
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Assess the current model and context map before prescribing a strategic structure.
+2. Decide who owns strategic design choices explicitly.
+3. Let application development inform strategy; do not impose strategy detached from implementation feedback.
+4. Architecture teams must stay customer-focused and model-focused, not framework-focused.
+5. Strategic decisions must remain revisable as domain understanding changes.
+
+### Required behavior (MUST)
+- Combine bounded contexts with distillation and large-scale structure when system complexity requires it.
+- Make strategy visible enough that teams can coordinate without a rigid master plan.
+- Keep technical frameworks subordinate to the domain strategy.
+- Treat strategic design as team decision-making, not just diagram production.
+
+### Anti-patterns (MUST NOT)
+- A top-down master plan that ignores model learning
+- Strategy owned by people disconnected from implementation
+- Technical architecture decisions presented as domain strategy
+- Context maps, core-domain decisions, and large-scale structures that are never revisited
+
+---

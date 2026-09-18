@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Expanded Cursor plugin packaging beyond The Pragmatic Programmer to **Refactoring**, **Clean Code**, and **Domain-Driven Design**: each now has `skills/<book>/`, granular Apply Intelligently `rules/`, a read-only `*-reviewer` subagent, plugin README, and marketplace description updates.
+- Reviewer subagents added: `refactoring-reviewer`, `clean-code-reviewer`, `ddd-reviewer` (plus existing `pragmatic-reviewer`).
+- Documented the shared plugin pattern in `docs/USAGE.md` and the README FAQ.
+
 - Turned The Pragmatic Programmer into a full Cursor plugin layout: `skills/the-pragmatic-programmer/`, `rules/`, and `agents/pragmatic-reviewer.md`, with plugin README and marketplace description updates.
 - Added a read-only `pragmatic-reviewer` Cursor subagent for isolated pragmatic audits (DRY, orthogonality, automation, feedback, contracts, prototype fossilization, broken windows).
 - Added granular Cursor Apply Intelligently rules under `the-pragmatic-programmer/rules/`, split from the full source by topic.

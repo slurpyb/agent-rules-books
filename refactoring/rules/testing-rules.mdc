@@ -1,0 +1,15 @@
+---
+description: Apply when aligning tests with refactoring, characterization coverage, or verifying preserved behavior.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Testing Rules
+
+1. Add characterization tests before risky edits when behavior is unclear.
+2. Keep tests focused on externally visible behavior.
+3. Update tests only when behavior intentionally changes.
+4. Do not couple tests to private implementation details more than necessary.
+5. Refactor tests too when they become noisy or duplicative.
+6. Keep test data expressive and minimal.
+
+---

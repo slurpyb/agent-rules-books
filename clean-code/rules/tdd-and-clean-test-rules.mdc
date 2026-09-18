@@ -1,0 +1,17 @@
+---
+description: Apply when following TDD cadence or keeping tests clean, FIRST, and free of duplication.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — TDD and clean test rules
+
+- Prefer writing a failing test before production code when the behavior can be specified clearly.
+- Do not write production behavior beyond what a failing test or explicit requirement justifies.
+- Keep tests small enough that a failure names one behavior or one concept.
+- Prefer one assert or one conceptual assertion per test when that improves clarity.
+- Use test names and test data that reveal the business or technical behavior under test.
+- Build a small testing vocabulary or helper DSL when repeated setup hides intent.
+- Keep test code clean; dirty tests reduce the ability to change production code safely.
+- Avoid tests that require multiple manual steps to run.
+- Use coverage patterns to find untested risk, not as a substitute for meaningful assertions.
+- Treat ignored, flaky, or skipped tests as unresolved questions.
