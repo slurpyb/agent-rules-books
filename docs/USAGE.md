@@ -311,6 +311,12 @@ Suggested split:
 - `refactor.mdc`: `Apply Manually` for explicit refactoring passes
 - `ddd.mdc`: `Apply Intelligently` for modeling-heavy tasks
 
+### Worked example: The Pragmatic Programmer
+
+[`the-pragmatic-programmer/rules/`](../the-pragmatic-programmer/rules/) ships the full Pragmatic Programmer source as many small Cursor `.mdc` rules. Each file sets `alwaysApply: false` and a concrete `description` so Cursor can **Apply Intelligently** by topic: DRY knowledge, orthogonality, tracer bullets, automation, contracts, error handling, testing, review, and so on.
+
+Use that layout when you want granular, action-scoped pressure from a full book without one giant Always Apply rule. Keep the book `SKILL.md` / `mini` skill for explicit workflow invocation; use the split rules for opportunistic attachment during ordinary coding.
+
 ### Use Cursor this way when
 
 - you want strong scoping and explicit control over context

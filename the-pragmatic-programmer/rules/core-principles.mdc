@@ -1,0 +1,30 @@
+---
+description: Apply when taking ownership of a change, assessing maintainability beyond a local edit, negotiating quality, watching for entropy or broken windows, or deciding whether software is good enough.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Core Principles
+
+## Own the Result
+1. Take responsibility for the quality and changeability of the code you touch.
+2. Do not blame tooling, framework defaults, or “existing style” for avoidable bad design.
+3. Surface trade-offs, risks, and uncertainty explicitly.
+
+## Think Beyond the Local Edit
+1. Every change affects future maintainability.
+2. Small quick fixes that multiply future cost are usually a bad bargain.
+3. Leave the area better than you found it.
+
+## Favor Adaptability
+1. Build systems that are easy to observe, test, and change.
+2. Prefer flexible boundaries over brittle cleverness.
+3. Avoid premature commitment when requirements are still moving.
+
+## Named Pragmatic Habits
+1. Treat quality as a requirement to negotiate with users and sponsors, not as an abstract pursuit of perfection.
+2. Stop polishing when the software is good enough for its real users and risks.
+3. Keep a knowledge portfolio: invest in learning, diversify skills, and revisit stale assumptions.
+4. Communicate decisions, risks, and tradeoffs clearly enough that others can act on them.
+5. Watch for entropy and small broken windows before they become normal.
+6. Use Stone Soup tactics only to create real progress, not to hide missing agreement.
+7. Watch for boiled-frog drift where gradual degradation becomes invisible.

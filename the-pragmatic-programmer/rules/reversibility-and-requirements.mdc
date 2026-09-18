@@ -1,0 +1,15 @@
+---
+description: Apply when choosing vendors, platforms, databases, or deployment environments; writing domain languages; digging for real requirements; or deciding whether more specification still reduces risk.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Reversibility, Domain Languages, and Requirements
+
+1. Preserve reversibility when requirements, vendors, platforms, databases, or deployment environments may change.
+2. Avoid irreversible commitments until evidence makes them worth the cost.
+3. Use a small domain language when it expresses domain rules more directly than general-purpose code.
+4. Keep domain languages readable by the people who must validate or change them.
+5. Dig for real requirements; do not accept current implementation details as requirements.
+6. Do not fall into the specification trap where prose keeps growing but uncertainty does not fall.
+7. Start building a working slice when further specification no longer reduces meaningful risk.
+8. Respect informed hesitation: if the team is not ready, identify the missing information or feedback.

@@ -1,0 +1,25 @@
+---
+description: Apply when spotting cargo-cult process, knowledge duplication across layers, non-orthogonal design, manual-everything workflows, or prototype fossilization into production.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Forbidden Patterns
+
+### Cargo-Cult Process
+- rituals followed with no benefit
+- documentation and checklists replacing automation
+
+### Knowledge Duplication
+- same rule in many places
+- copied logic because “layers need it too”
+
+### Non-Orthogonal Design
+- modules with overlapping responsibilities
+- changes leaking across boundaries by default
+
+### Manual Everything
+- repeated human steps for build, test, release, setup, or validation
+- hidden local environment assumptions
+
+### Prototype Fossilization
+- experimental code promoted to production without redesign or hardening

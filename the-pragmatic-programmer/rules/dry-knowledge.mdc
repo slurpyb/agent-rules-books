@@ -1,0 +1,20 @@
+---
+description: Apply when the same business rule, validation, mapping, status semantics, schema meaning, or process step appears in more than one place, or when copy/paste logic risks becoming a second source of truth.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — DRY (Knowledge)
+
+DRY means **do not duplicate knowledge**, not merely do not duplicate text.
+
+1. A business rule should have one authoritative representation.
+2. Validation logic for the same concept should not be scattered.
+3. Status semantics, mappings, and calculations should not be copied across layers.
+4. Configuration and schema meaning should not be repeated inconsistently.
+5. Avoid duplicated process steps that can be automated.
+
+Anti-patterns (MUST NOT):
+- the same rule encoded in UI, API, service, and DB trigger with no ownership
+- copy/paste with minor edits for “just this one case”
+- duplicated manual deployment or testing steps
+- one concept with multiple partially aligned implementations

@@ -1,0 +1,27 @@
+---
+description: Apply as a final gate before shipping or declaring a change done: verify DRY, orthogonality, feedback, automation, contracts, communication, prototype hygiene, and broken-window cleanup.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Change Checklist
+
+Before finalizing any change, verify:
+- Did we reduce duplicated knowledge?
+- Are responsibilities more orthogonal after the change?
+- Did we improve or preserve fast feedback?
+- Did we automate anything repetitive that was hurting reliability?
+- Are contracts and assumptions clearer?
+- Is the code easier to communicate about?
+- Did we avoid prototype shortcuts becoming silent production defaults?
+- Did we fix at least one small “broken window” if it was in the touched area?
+
+If any answer is no, revise before shipping.
+
+When uncertain, choose the option that:
+1. removes duplicated knowledge
+2. keeps concerns orthogonal
+3. shortens feedback loops
+4. improves automation
+5. leaves the codebase easier to change tomorrow
+
+Be pragmatic, and make the right thing the easy thing.

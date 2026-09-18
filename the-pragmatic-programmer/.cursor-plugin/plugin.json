@@ -1,6 +1,6 @@
 {
   "name": "the-pragmatic-programmer",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Apply Hunt and Thomas-inspired pragmatic programming rules when improving engineering judgment, feedback loops, DRY knowledge, orthogonality, automation, or adaptability.",
   "author": {
     "name": "Maciej Ciemborowicz"

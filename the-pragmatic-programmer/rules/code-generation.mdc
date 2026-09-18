@@ -1,0 +1,21 @@
+---
+description: Apply when generating new code, scaffolding features, or choosing defaults for source of truth, orthogonality, feedback, automation, contracts, naming, and incremental end-to-end slices.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Code Generation
+
+When generating code, default to:
+1. one clear source of truth for each rule
+2. orthogonal responsibilities
+3. fast local feedback
+4. automation over repeated manual work
+5. explicit contracts and assumptions
+6. readable names and communication
+7. incremental end-to-end slices when building new capabilities
+
+Avoid by default:
+- copy/paste rule duplication
+- tangled modules
+- fragile manual workflows
+- overcommitting to an architecture before the first end-to-end path works

@@ -1,0 +1,15 @@
+---
+description: Apply when allocating or releasing resources, locks, or handles; enforcing shy-code / Law of Demeter; removing temporal coupling; considering metaprogramming or blackboard coordination; or judging algorithmic growth.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Resources and Coupling
+
+1. Finish what you start when allocating, opening, locking, or otherwise acquiring resources.
+2. Release every resource you acquire, preferably in the opposite order from acquisition.
+3. Keep resource ownership local and explicit.
+4. Apply shy-code and Law of Demeter discipline so modules reveal only necessary information.
+5. Avoid temporal coupling; make ordering requirements explicit or remove them.
+6. Use metaprogramming only when it reduces duplication or improves adaptability without hiding behavior.
+7. Use blackboard-style coordination only when uncertain order, multiple sources, or opportunistic collaboration justify it.
+8. Understand algorithmic growth before writing or accepting performance-sensitive code.

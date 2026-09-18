@@ -1,0 +1,17 @@
+---
+description: Apply when reviewing diffs, PRs, or generated changes for duplicated knowledge, hidden coupling, missing automation, long feedback loops, unclear contracts, brittle integrations, or poor communication.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Code Review
+
+When reviewing code, actively look for:
+- duplicated knowledge, not just duplicated lines
+- hidden couplings
+- missing automation opportunities
+- long feedback loops
+- local fixes that worsen future changeability
+- unclear contracts or assumptions
+- non-repeatable manual processes
+- brittle integration points
+- code that communicates poorly

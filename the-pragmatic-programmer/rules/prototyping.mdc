@@ -1,0 +1,11 @@
+---
+description: Apply when building spikes, experiments, throwaway code, proofs of concept, or deciding what from a prototype may safely survive into production.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Prototyping
+
+1. Use prototypes to learn, not to pretend you are done.
+2. Be explicit about what a prototype proves and what it does not.
+3. Do not let experimental shortcuts silently become production defaults.
+4. Carry forward only the lessons or code that still deserve to survive.

@@ -1,0 +1,16 @@
+---
+description: Apply when encoding preconditions, postconditions, invariants, assertions, or impossible states; distinguishing programmer errors from expected domain failures; or keeping contracts close to protected abstractions.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Design by Contract and Assertions
+
+1. Make assumptions explicit in code.
+2. Use assertions or invariant checks where they clarify impossible states.
+3. Distinguish between programmer errors, contract violations, and expected domain failures.
+4. Keep contracts close to the abstraction they protect.
+
+Anti-patterns (MUST NOT):
+- relying on comments for critical preconditions
+- hiding invariant assumptions in scattered callers
+- returning nonsense values for impossible states
