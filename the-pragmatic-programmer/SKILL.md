@@ -10,4 +10,12 @@ Use this skill when a task involves pragmatic engineering judgment, responsibili
 
 Before making design or code decisions, read and apply [the-pragmatic-programmer.mini.md](the-pragmatic-programmer.mini.md). Use [the-pragmatic-programmer.md](the-pragmatic-programmer.md) only as a deeper reference when the mini rules are not enough for the current engineering tradeoff.
 
-For Cursor, prefer the granular Apply Intelligently rules in [rules/](rules/). They split the full source by topic so the agent can attach only the pressure relevant to the current action instead of loading the whole book file.
+## Cursor plugin
+
+This book directory is also a Cursor plugin (see [README.md](README.md)):
+
+- Plugin skill: [skills/the-pragmatic-programmer/SKILL.md](skills/the-pragmatic-programmer/SKILL.md)
+- Apply Intelligently rules: [rules/](rules/)
+- Review subagent: [agents/pragmatic-reviewer.md](agents/pragmatic-reviewer.md)
+
+Prefer the plugin skill and rules inside Cursor. Use the `pragmatic-reviewer` subagent for isolated pragmatic audits.

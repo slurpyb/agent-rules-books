@@ -1,7 +1,7 @@
 {
   "name": "the-pragmatic-programmer",
-  "version": "0.6.1",
-  "description": "Apply Hunt and Thomas-inspired pragmatic programming rules when improving engineering judgment, feedback loops, DRY knowledge, orthogonality, automation, or adaptability.",
+  "version": "0.7.0",
+  "description": "Pragmatic Programmer skill, granular Cursor rules, and a read-only pragmatic-reviewer subagent for Hunt and Thomas-inspired engineering judgment.",
   "author": {
     "name": "Maciej Ciemborowicz"
   },
@@ -10,7 +10,10 @@
     "dry",
     "orthogonality",
     "automation",
-    "agent-rules"
+    "agent-rules",
+    "skill",
+    "subagent",
+    "code-review"
   ],
   "homepage": "https://github.com/ciembor/agent-rules-books",
   "license": "MIT"

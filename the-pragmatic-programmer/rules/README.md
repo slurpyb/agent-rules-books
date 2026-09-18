@@ -33,8 +33,10 @@ These `.mdc` files are packaged with the `the-pragmatic-programmer` Cursor plugi
 | `testing.mdc` | Writing or running automated tests |
 | `change-checklist.mdc` | Final gate before shipping a change |
 
-## Relationship to mini / nano / skill
+## Relationship to mini / nano / skill / subagent
 
-- **Skill** ([`../SKILL.md`](../SKILL.md)): loads `mini` by default for book-specific workflows.
+- **Plugin skill** ([`../skills/the-pragmatic-programmer/`](../skills/the-pragmatic-programmer/)): loads `mini` by default for book-specific workflows.
+- **Root skill entry** ([`../SKILL.md`](../SKILL.md)): Agent Skills CLI / portable entrypoint.
 - **These rules**: split the **full** source for Cursor's intelligent, per-action attachment.
-- Prefer these over dumping the whole full file into an Always Apply rule.
+- **Subagent** ([`../agents/pragmatic-reviewer.md`](../agents/pragmatic-reviewer.md)): read-only pragmatic audit in an isolated context.
+- Prefer these over dumping the whole full file into an Always Apply rule. See [`../README.md`](../README.md).

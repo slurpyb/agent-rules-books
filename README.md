@@ -170,7 +170,7 @@ The book focuses on systems that survive production reality: failures, overload,
 
 Authors: [Andrew Hunt](https://toolshed.com/), [David Thomas](https://pragdave.me/)
 
-The book describes a pragmatic approach to software development: responsibility, DRY at the knowledge level, orthogonality, automation, fast feedback, prototyping, and adaptability. This rule set works well as a general engineering layer. For Cursor, it also ships granular Apply Intelligently rules under [`the-pragmatic-programmer/rules/`](the-pragmatic-programmer/rules/), split from the full source by topic.
+The book describes a pragmatic approach to software development: responsibility, DRY at the knowledge level, orthogonality, automation, fast feedback, prototyping, and adaptability. This rule set works well as a general engineering layer. For Cursor it ships as a plugin with a skill, granular Apply Intelligently rules under [`the-pragmatic-programmer/rules/`](the-pragmatic-programmer/rules/), and a read-only [`pragmatic-reviewer`](the-pragmatic-programmer/agents/pragmatic-reviewer.md) subagent.
 
 ### [Working Effectively with Legacy Code](https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code)
 
@@ -226,7 +226,7 @@ Yes. You can copy selected rule sets into `CLAUDE.md` as project memory or turn 
 
 ### Can I use these as Cursor rules?
 
-Yes. You can adapt the rule sets into Cursor project rules or keep them as AGENTS.md-style instructions. The Pragmatic Programmer plugin already includes a ready-made split under [`the-pragmatic-programmer/rules/`](the-pragmatic-programmer/rules/): many small `.mdc` files with Apply Intelligently descriptions derived from the full source.
+Yes. You can adapt the rule sets into Cursor project rules or keep them as AGENTS.md-style instructions. The Pragmatic Programmer plugin already includes a ready-made split under [`the-pragmatic-programmer/rules/`](the-pragmatic-programmer/rules/): many small `.mdc` files with Apply Intelligently descriptions derived from the full source. It also packages a Cursor skill and the [`pragmatic-reviewer`](the-pragmatic-programmer/agents/pragmatic-reviewer.md) subagent.
 
 ### Can I use these as GitHub Copilot custom instructions or skills?
 

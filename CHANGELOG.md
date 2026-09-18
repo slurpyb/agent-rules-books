@@ -2,8 +2,10 @@
 
 ## Unreleased
 
-- Added granular Cursor Apply Intelligently rules for The Pragmatic Programmer under `the-pragmatic-programmer/rules/`, split from the full source by topic (DRY, orthogonality, tracer bullets, automation, contracts, testing, review, and related concerns).
-- Documented the Cursor split in `docs/USAGE.md`, the book `SKILL.md`, and the README FAQ.
+- Turned The Pragmatic Programmer into a full Cursor plugin layout: `skills/the-pragmatic-programmer/`, `rules/`, and `agents/pragmatic-reviewer.md`, with plugin README and marketplace description updates.
+- Added a read-only `pragmatic-reviewer` Cursor subagent for isolated pragmatic audits (DRY, orthogonality, automation, feedback, contracts, prototype fossilization, broken windows).
+- Added granular Cursor Apply Intelligently rules under `the-pragmatic-programmer/rules/`, split from the full source by topic.
+- Documented the plugin, rules, and subagent in `docs/USAGE.md`, the book `SKILL.md`, and the README FAQ.
 
 ## v0.6 - 2026-09-09
 

@@ -257,6 +257,7 @@ Import the shared root `AGENTS.md` baseline by adding this line to `CLAUDE.md` i
 - `.agents/skills/` or `.cursor/skills/` for Agent Skills
 - `.cursor/rules/*.mdc` project rules
 - rule types: `Always Apply`, `Apply Intelligently`, `Apply to Specific Files`, `Apply Manually`
+- `.cursor/agents/` custom subagents (also packaged inside Cursor plugins under `agents/`)
 - root `AGENTS.md` as a simple alternative
 - user rules
 - `@rule-name` for explicit manual rule application
@@ -313,9 +314,15 @@ Suggested split:
 
 ### Worked example: The Pragmatic Programmer
 
-[`the-pragmatic-programmer/rules/`](../the-pragmatic-programmer/rules/) ships the full Pragmatic Programmer source as many small Cursor `.mdc` rules. Each file sets `alwaysApply: false` and a concrete `description` so Cursor can **Apply Intelligently** by topic: DRY knowledge, orthogonality, tracer bullets, automation, contracts, error handling, testing, review, and so on.
+[`the-pragmatic-programmer/`](../the-pragmatic-programmer/) is a full Cursor plugin:
 
-Use that layout when you want granular, action-scoped pressure from a full book without one giant Always Apply rule. Keep the book `SKILL.md` / `mini` skill for explicit workflow invocation; use the split rules for opportunistic attachment during ordinary coding.
+| Piece | Path | Use |
+| --- | --- | --- |
+| Skill | [`skills/the-pragmatic-programmer/`](../the-pragmatic-programmer/skills/the-pragmatic-programmer/) | Explicit pragmatic workflow (`mini`, with `full` as reference) |
+| Rules | [`rules/`](../the-pragmatic-programmer/rules/) | Many Apply Intelligently `.mdc` topic rules from the full source |
+| Subagent | [`agents/pragmatic-reviewer.md`](../the-pragmatic-programmer/agents/pragmatic-reviewer.md) | Read-only pragmatic audit in an isolated context |
+
+Each rule sets `alwaysApply: false` and a concrete `description` so Cursor can attach DRY, orthogonality, tracer bullets, automation, contracts, testing, and related pressure by task topic. Use the skill for implementation work, the rules for opportunistic attachment, and `pragmatic-reviewer` when you want an independent checklist pass without flooding the main chat.
 
 ### Use Cursor this way when
 
