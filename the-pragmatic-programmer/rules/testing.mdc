@@ -1,0 +1,11 @@
+---
+description: Apply when writing, organizing, or running tests; keeping the feedback path fast; aligning tests with contracts; or keeping flaky environment-dependent tests out of the critical path.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Testing
+
+1. Keep tests runnable quickly and often.
+2. Prefer tests that align with the business or technical contract being protected.
+3. Use automation so validation is habitual, not heroic.
+4. Keep flaky or environment-dependent tests out of the critical feedback path where possible.

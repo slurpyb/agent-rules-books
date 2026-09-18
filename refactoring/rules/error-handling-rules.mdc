@@ -1,0 +1,13 @@
+---
+description: Apply when restructuring error handling without changing observable failure behavior.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Error Handling Rules
+
+1. Refactor error handling to make the main path visible.
+2. Keep cleanup, validation, and recovery logic from drowning core behavior.
+3. Standardize similar error paths when they duplicate structure.
+4. Preserve existing error semantics unless intentionally changing behavior.
+
+---

@@ -1,0 +1,33 @@
+---
+description: Apply when modeling values by attributes, immutability, and replaceability rather than identity.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Value Objects
+
+### Use value objects when
+- a concept is defined by attributes rather than identity
+- the concept has validation rules
+- the concept has behavior
+- passing a primitive would hide meaning
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Value objects must be immutable by default.
+2. Construction must guarantee validity.
+3. Equality must be by value, not by identity.
+4. Validation for the concept should live inside the value object.
+5. Replace primitive obsession aggressively where the concept matters.
+
+### Required behavior (MUST)
+- Use value objects for descriptive concepts whose attributes together carry domain meaning.
+- Name value objects after the domain concept, not the primitive representation.
+- Keep validation and side-effect-free operations for the value near the value itself.
+- Replace raw primitives when a named quantity, range, code, measurement, or descriptive whole value matters to the model.
+
+### Anti-patterns (MUST NOT)
+- Repeating the same value validation across handlers
+- Passing raw primitives for named domain quantities, ranges, codes, or measurements
+- Passing raw strings for meaningful identifiers
+- Letting invalid values exist temporarily without an explicit model for incompleteness
+
+---

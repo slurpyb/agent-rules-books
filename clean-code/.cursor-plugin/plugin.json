@@ -1,7 +1,7 @@
 {
   "name": "clean-code",
-  "version": "0.6.0",
-  "description": "Apply Robert C. Martin-inspired clean code rules when improving readability, naming, function design, responsibilities, or testable everyday code.",
+  "version": "0.7.0",
+  "description": "Clean Code skill, granular Cursor rules, and a read-only clean-code-reviewer subagent for everyday readability and local code quality.",
   "author": {
     "name": "Maciej Ciemborowicz"
   },
@@ -9,7 +9,10 @@
     "clean-code",
     "readability",
     "naming",
-    "agent-rules"
+    "agent-rules",
+    "skill",
+    "subagent",
+    "code-review"
   ],
   "homepage": "https://github.com/ciembor/agent-rules-books",
   "license": "MIT"

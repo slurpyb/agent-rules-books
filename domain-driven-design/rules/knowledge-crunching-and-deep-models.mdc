@@ -1,0 +1,27 @@
+---
+description: Apply when discovering domain concepts, deepening a shallow model, or treating awkward code as a modeling signal.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Knowledge Crunching and Deep Models
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Treat the model as discovered, not invented from technical structure.
+2. Before adding abstractions, identify what domain experts would call the concept.
+3. When requirements are ambiguous, look for missing domain distinctions instead of forcing generic names.
+4. Let awkward code, contradictory language, and repeated conditionals trigger deeper modeling.
+5. Update names and boundaries when new domain insight appears.
+
+### Required behavior (MUST)
+- Ask what business rule, policy, lifecycle, or invariant the code is expressing.
+- Prefer a deeper model that clarifies behavior over a shallow model that merely stores data.
+- Capture newly discovered concepts in names, tests, APIs, and modules.
+- Treat refactoring as part of model discovery, not just code cleanup.
+
+### Anti-patterns (MUST NOT)
+- Starting from database tables and calling the result the domain model
+- Preserving vague names after discovering sharper domain language
+- Hiding domain complexity behind `type`, `status`, or `metadata` fields
+- Treating the first model as final
+
+---

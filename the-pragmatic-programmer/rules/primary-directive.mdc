@@ -1,0 +1,28 @@
+---
+description: Apply The Pragmatic Programmer primary bias when making engineering tradeoffs, choosing between dogmatic process and outcome-driven judgment, or deciding how to leave code easier to change.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Primary Directive
+
+Be pragmatic, not dogmatic.
+
+When uncertain, choose the option that:
+1. reduces knowledge duplication
+2. keeps concerns independent
+3. shortens feedback loops
+4. leaves the system easier to change
+5. makes intent clearer to future maintainers
+
+Do not follow style or process rituals that do not improve outcomes.
+
+This is binding engineering policy: `MUST` is binding, `SHOULD` is a strong default, and `MUST NOT` is forbidden.
+
+Optimize for:
+- clear ownership and responsibility
+- avoiding duplicated knowledge
+- orthogonality
+- incremental delivery
+- ruthless feedback
+- automation of repetitive work
+- code that is easy to change and easy to reason about

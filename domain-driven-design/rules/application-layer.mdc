@@ -1,0 +1,28 @@
+---
+description: Apply when shaping application services as orchestration without burying domain rules.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Application Layer
+
+### Purpose
+The application layer coordinates application tasks.
+It does not replace the domain model.
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Application services load aggregates, call domain behavior, persist results, and coordinate side effects.
+2. Application services must not hold core business invariants that belong in the domain.
+3. Application services must speak the ubiquitous language.
+4. Application services may coordinate transactions and integration publication, but should not become procedural god classes.
+
+### Required behavior (MUST)
+- Keep each application operation focused on one application action.
+- Let domain objects make domain decisions.
+- Keep orchestration distinct from business rules.
+
+### Anti-patterns (MUST NOT)
+- Application services containing all branching business logic
+- Application services manipulating entity internals directly
+- Repositories, UI handlers, and application services all implementing overlapping rules
+
+---

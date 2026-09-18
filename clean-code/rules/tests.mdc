@@ -1,0 +1,18 @@
+---
+description: Apply when writing readable, fast, independent tests that document behavior.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Tests
+
+- Treat tests as production-quality code.
+- Keep tests clean, readable, deterministic, and maintainable.
+- A test should communicate one main idea.
+- Prefer simple setup and clear assertions.
+- Avoid brittle tests coupled to irrelevant implementation details.
+- Tests should be fast when possible.
+- Tests should be isolated and order-independent.
+- Tests should be self-checking.
+- Add or update tests for behavior changes, bug fixes, and significant refactors.
+- Do not ship code changes without proportionate validation.
+- When fixing a bug, add a test that would have caught it, when feasible.

@@ -1,0 +1,37 @@
+---
+description: Apply when choosing extract, inline, rename, move, split, or simplify transformations during a refactoring pass.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Preferred Refactoring Moves
+
+### Naming Refactorings
+- Rename variables to reveal intent.
+- Rename functions to describe behavior, not mechanism.
+- Rename types and modules to align with problem-domain terminology.
+- Rename before deeper refactoring when bad names block understanding.
+
+### Extraction Refactorings
+- Extract function when a block has a coherent purpose.
+- Extract variable when an expression is hard to read.
+- Extract class when one class has multiple reasons to change.
+- Extract module when a file mixes unrelated concerns.
+
+### Movement Refactorings
+- Move function to the module or type where the data or concept lives.
+- Move field when ownership is clearer elsewhere.
+- Move statements to group related operations and reduce cognitive jumps.
+
+### Simplification Refactorings
+- Inline accidental abstractions.
+- Collapse unnecessary layers.
+- Replace nested conditionals with guard clauses where it improves clarity.
+- Consolidate duplicate conditional fragments.
+
+### Data Refactorings
+- Encapsulate mutable state.
+- Replace magic values with named constants or domain types.
+- Introduce parameter objects for repeated argument groups.
+- Replace raw collections with named abstractions when behavior accumulates around them.
+
+---

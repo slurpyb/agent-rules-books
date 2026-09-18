@@ -1,0 +1,15 @@
+---
+description: Apply when assembling systems, delaying concrete decisions, or keeping construction separate from business logic.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — System construction rules
+
+- Separate constructing a system from using it.
+- Keep object graph assembly, dependency injection, factories, and framework bootstrapping out of ordinary business behavior.
+- Put startup wiring in an explicit main or composition area.
+- Use factories when construction policy is meaningful or complex.
+- Do not let cross-cutting concerns obscure ordinary code flow.
+- Use standards, frameworks, proxies, or AOP-style mechanisms only when they add demonstrable value.
+- Test-drive architectural decisions with executable slices, not only diagrams or configuration.
+- Use domain-specific languages only when they make system intent clearer than general-purpose code.

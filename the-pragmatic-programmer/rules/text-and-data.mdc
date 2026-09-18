@@ -1,0 +1,11 @@
+---
+description: Apply when choosing serialization, config, scripts, long-lived automation formats, schema versioning, or deciding between inspectable plain text and opaque binary or framework lock-in.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Text and Data
+
+1. Favor plain text and open formats for long-lived automation and integration where practical.
+2. Make scripts and configs inspectable and diffable.
+3. Keep serialization and config formats explicit and version-aware.
+4. Avoid opaque binary or framework-specific lock-in unless justified.

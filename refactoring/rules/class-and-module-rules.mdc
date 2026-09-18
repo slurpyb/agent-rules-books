@@ -1,0 +1,15 @@
+---
+description: Apply when moving responsibilities between classes or modules, splitting, or consolidating during refactoring.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Class and Module Rules
+
+1. A class or module should have a narrow reason to change.
+2. Separate policy from presentation, I/O, persistence, and framework details.
+3. Prefer composition of small focused units over god objects.
+4. Delete or inline abstractions that no longer pay for themselves.
+5. Do not create `utils`, `helpers`, or `common` modules as a default response to duplication.
+6. Organize modules around concepts and behavior, not leftover convenience.
+
+---

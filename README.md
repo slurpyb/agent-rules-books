@@ -110,7 +110,7 @@ The book describes designing systems around stable boundaries, the dependency ru
 
 Author: [Robert C. Martin](https://cleancoder.com/)
 
-The book focuses on readability, naming, small functions, responsibilities, tests, and simplicity. This rule set is a strong default for everyday coding and code review.
+The book focuses on readability, naming, small functions, responsibilities, tests, and simplicity. This rule set is a strong default for everyday coding and code review. For Cursor it ships as a plugin with a skill, granular Apply Intelligently rules under [`clean-code/rules/`](clean-code/rules/), and a read-only [`clean-code-reviewer`](clean-code/agents/clean-code-reviewer.md) subagent.
 
 ### [Code Complete](https://www.goodreads.com/book/show/4845.Code_Complete)
 
@@ -128,7 +128,7 @@ The book covers reliability, scalability, consistency, replication, partitioning
 
 Author: [Eric Evans](https://domainlanguage.com/)
 
-The book introduces domain modeling, ubiquitous language, bounded contexts, tactical patterns, and strategic design. This rule set helps agents think in terms of the business model rather than tables, controllers, or DTOs.
+The book introduces domain modeling, ubiquitous language, bounded contexts, tactical patterns, and strategic design. This rule set helps agents think in terms of the business model rather than tables, controllers, or DTOs. For Cursor it ships as a plugin with a skill, granular Apply Intelligently rules under [`domain-driven-design/rules/`](domain-driven-design/rules/), and a read-only [`ddd-reviewer`](domain-driven-design/agents/ddd-reviewer.md) subagent.
 
 ### [Domain-Driven Design Distilled](https://www.goodreads.com/book/show/28602719-domain-driven-design-distilled)
 
@@ -152,7 +152,7 @@ The book catalogues enterprise application patterns: layers, service layer, tran
 
 Author: [Martin Fowler](https://martinfowler.com/)
 
-The book describes safe ways to improve code structure without changing observable behavior. This rule set emphasizes small steps, tests, code smell detection, and keeping refactoring separate from feature changes.
+The book describes safe ways to improve code structure without changing observable behavior. This rule set emphasizes small steps, tests, code smell detection, and keeping refactoring separate from feature changes. For Cursor it ships as a plugin with a skill, granular Apply Intelligently rules under [`refactoring/rules/`](refactoring/rules/), and a read-only [`refactoring-reviewer`](refactoring/agents/refactoring-reviewer.md) subagent.
 
 ### [Refactoring.Guru](https://refactoring.guru/refactoring)
 
@@ -170,7 +170,7 @@ The book focuses on systems that survive production reality: failures, overload,
 
 Authors: [Andrew Hunt](https://toolshed.com/), [David Thomas](https://pragdave.me/)
 
-The book describes a pragmatic approach to software development: responsibility, DRY at the knowledge level, orthogonality, automation, fast feedback, prototyping, and adaptability. This rule set works well as a general engineering layer.
+The book describes a pragmatic approach to software development: responsibility, DRY at the knowledge level, orthogonality, automation, fast feedback, prototyping, and adaptability. This rule set works well as a general engineering layer. For Cursor it ships as a plugin with a skill, granular Apply Intelligently rules under [`the-pragmatic-programmer/rules/`](the-pragmatic-programmer/rules/), and a read-only [`pragmatic-reviewer`](the-pragmatic-programmer/agents/pragmatic-reviewer.md) subagent.
 
 ### [Working Effectively with Legacy Code](https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code)
 
@@ -226,7 +226,12 @@ Yes. You can copy selected rule sets into `CLAUDE.md` as project memory or turn 
 
 ### Can I use these as Cursor rules?
 
-Yes. You can adapt the rule sets into Cursor project rules or keep them as AGENTS.md-style instructions.
+Yes. You can adapt the rule sets into Cursor project rules or keep them as AGENTS.md-style instructions. Several books already ship as Cursor plugins with Apply Intelligently `.mdc` splits, a plugin skill, and a read-only review subagent:
+
+- [`the-pragmatic-programmer/`](the-pragmatic-programmer/) (`pragmatic-reviewer`)
+- [`refactoring/`](refactoring/) (`refactoring-reviewer`)
+- [`clean-code/`](clean-code/) (`clean-code-reviewer`)
+- [`domain-driven-design/`](domain-driven-design/) (`ddd-reviewer`)
 
 ### Can I use these as GitHub Copilot custom instructions or skills?
 

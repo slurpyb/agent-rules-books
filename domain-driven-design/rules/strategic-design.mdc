@@ -1,0 +1,28 @@
+---
+description: Apply when distinguishing core, supporting, and generic subdomains or drawing context maps.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Strategic Design
+
+### Core Domain
+1. Invest the most care in the core domain.
+2. Protect the core domain from foreign models, vendor schemas, and generic abstractions.
+3. Keep the core domain expressive even if supporting areas are simpler.
+
+### Supporting and Generic Subdomains
+1. Do not over-model commodity concerns.
+2. Use simpler models where business complexity is low.
+3. Save the richest modeling effort for the parts that matter strategically.
+
+### Context Mapping
+1. Integration relationships must be visible in code.
+2. Ownership of translation must be explicit.
+3. Upstream and downstream influence must be reflected in adapters and contracts.
+
+### Anti-patterns (MUST NOT)
+- Spending more design effort on plumbing than on the core domain
+- Modeling authentication utilities more richly than the pricing engine
+- Allowing a legacy system vocabulary to dominate the core model
+
+---

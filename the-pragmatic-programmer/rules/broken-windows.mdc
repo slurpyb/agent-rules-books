@@ -1,0 +1,11 @@
+---
+description: Apply when encountering small quality decay in touched code, temporary hacks without cleanup plans, or signals that local entropy is becoming normalized.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Broken Windows
+
+1. Do not normalize local decay.
+2. Fix small quality problems before they signal that nobody cares.
+3. Tidy the code you touch where the cost is low and the value is immediate.
+4. Avoid leaving behind “temporary” hacks with no cleanup plan.

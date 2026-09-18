@@ -1,0 +1,11 @@
+---
+description: Apply when introducing shared mutable state, globals, ambient context, locks, async work, concurrency assumptions, or deciding whether asynchronous complexity earns its cost.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — State and Concurrency
+
+1. Treat shared mutable state as expensive.
+2. Prefer immutability, isolation, or explicit synchronization when state is shared.
+3. Keep concurrency assumptions visible.
+4. Do not add asynchronous complexity unless it clearly earns its cost.

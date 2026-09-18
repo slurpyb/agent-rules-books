@@ -1,0 +1,25 @@
+---
+description: Apply when refactoring toward a deeper model in safe steps inside a context.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Refactoring Rules
+
+When changing existing code:
+
+1. Recover the ubiquitous language.
+2. Move business rules into entities, value objects, aggregates, or domain services where appropriate.
+3. Introduce value objects where primitives hide meaning.
+4. Redraw aggregate boundaries where invariants are unclear or transactional scope is too large.
+5. Separate bounded contexts that are currently bleeding together.
+6. Add translation layers where foreign models leak into the domain.
+7. Break up god services into focused application services plus richer domain behavior.
+8. Remove persistence and transport assumptions from the model.
+9. Extract explicit constraints, specifications, and policies from repeated conditionals.
+10. Clarify context relationships when integration code is ambiguous.
+11. Distill the core domain out of supporting mechanisms when strategic logic is buried.
+12. Preserve behavior while improving the model incrementally.
+
+Do not rewrite everything at once unless explicitly required.
+
+---

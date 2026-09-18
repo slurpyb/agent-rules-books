@@ -1,0 +1,27 @@
+---
+description: Apply when naming APIs, tests, and modules with domain expert vocabulary inside a bounded context.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Ubiquitous Language
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Use the exact business terms used by domain experts inside a bounded context.
+2. One concept must have one name inside a bounded context.
+3. One name must not mean different concepts inside a bounded context.
+4. Method names, test names, and modules must use the same vocabulary as the domain.
+5. Rename code when the domain understanding improves.
+
+### Required behavior (MUST)
+- Prefer names from the active bounded context; in a shipping model, terms such as `Cargo`, `Itinerary`, `Handling Event`, and `Route Specification` should appear directly.
+- Prefer operation names that express the domain action, such as changing a cargo destination, adding a handling event, checking allocation, or applying an overbooking policy.
+- Avoid technical placeholders when a precise domain term exists.
+- Avoid names imported from another bounded context without translation.
+
+### Anti-patterns (MUST NOT)
+- Using technical names where the business has precise names
+- Using synonyms for the same concept in the same context
+- Reusing the same term for different meanings because it is convenient
+- Keeping bad names because they already exist in the database
+
+---

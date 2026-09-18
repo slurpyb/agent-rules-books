@@ -1,0 +1,30 @@
+---
+description: Apply when choosing aggregate boundaries, roots, and transactional consistency rules.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Aggregates
+
+### Purpose
+Aggregates are **consistency boundaries**, not just object graphs.
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Design aggregates around invariants that must be consistent immediately.
+2. Keep aggregates as small as possible.
+3. All modifications that affect aggregate invariants must go through the aggregate root.
+4. Reference other aggregates by identity unless stronger consistency is truly required.
+5. Keep transactional boundaries aligned with invariants; do not expand transactions across aggregates merely for convenience.
+
+### Required behavior (MUST)
+- Put invariant-protecting methods on the aggregate root.
+- Keep internal members encapsulated.
+- Handle consistency across aggregate boundaries deliberately when the invariant does not belong inside one aggregate.
+- Model transactional boundaries deliberately.
+
+### Anti-patterns (MUST NOT)
+- Large graph aggregates built for object-relational mapping convenience
+- Aggregate roots exposing internal collections for arbitrary external state changes
+- Transactions modifying many aggregates because object references make it easy
+- Confusing parent-child object structure with aggregate boundaries
+
+---

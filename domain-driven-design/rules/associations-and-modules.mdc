@@ -1,0 +1,31 @@
+---
+description: Apply when constraining associations and packaging the model into coherent modules.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Associations and Modules
+
+### Associations
+1. Model associations only when they support behavior or meaning.
+2. Prefer simpler, more navigable associations over fully connected object graphs.
+3. Reduce bidirectional associations unless the domain requires them.
+4. Reference other aggregates by identity unless direct object traversal is part of an invariant boundary.
+
+### Modules
+1. Modules must communicate domain concepts and bounded context ownership.
+2. Organize modules around model meaning, not only technical layers.
+3. Keep related concepts together when they change together.
+4. Avoid infrastructure-driven packaging that hides the domain.
+
+### Required behavior (MUST)
+- Use package names that match the ubiquitous language.
+- Keep model concepts discoverable from the directory structure.
+- Split modules when different concepts evolve independently.
+
+### Anti-patterns (MUST NOT)
+- `models`, `services`, `utils`, and `helpers` as the dominant structure
+- Associations created only because the persistence mechanism supports them
+- Object graphs that make aggregate boundaries invisible
+- Modules grouped by technical artifact while domain concepts are scattered
+
+---

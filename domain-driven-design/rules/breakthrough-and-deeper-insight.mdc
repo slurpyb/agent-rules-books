@@ -1,0 +1,25 @@
+---
+description: Apply when a better model appears and migration must stay incremental and behavior-preserving.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Breakthrough and Deeper Insight
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Expect useful models to change after deeper insight.
+2. Treat a breakthrough model as a candidate for deliberate refactoring, not as churn.
+3. When a better model appears, compare its explanatory power against migration cost.
+4. Preserve working behavior while moving toward the deeper model in safe steps.
+
+### Required behavior (MUST)
+- Look for concepts that simplify many special cases at once.
+- Prefer changes that make future business rules easier to express.
+- Use awkwardness, contradictions, and repeated failed attempts as signals that the model is shallow.
+- Keep focus on the basics when the model becomes too elaborate.
+
+### Anti-patterns (MUST NOT)
+- Rejecting a better model only because the current one already works
+- Big-bang rewrites when incremental migration is possible
+- Elaborate abstractions that do not improve domain insight
+
+---

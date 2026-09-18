@@ -1,0 +1,16 @@
+---
+description: Apply when repeating manual build, test, lint, format, package, deploy, release, or setup steps; replacing tribal-knowledge commands; or aligning local scripts with shared project automation.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Automation
+
+1. Automate repetitive, error-prone, or easy-to-forget tasks.
+2. Prefer repeatable scripts over tribal-knowledge commands.
+3. Build, test, lint, format, package, and deploy steps should be reproducible.
+4. Keep local automation aligned with the project's shared build, test, and release automation.
+
+Anti-patterns (MUST NOT):
+- “works on my machine” build steps
+- manual release rituals with many hidden prerequisites
+- documentation that describes what a script should do instead of having the script

@@ -1,0 +1,20 @@
+---
+description: Apply when separating domain from UI/infrastructure or resisting Smart UI for complex domains.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Layered Architecture and Smart UI
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Keep the domain layer as the place where the model and business rules live.
+2. Separate presentation, application coordination, domain behavior, and infrastructure when the domain is complex enough to need model-driven design.
+3. Let application code coordinate tasks without owning domain decisions.
+4. Keep infrastructure services and framework concerns outside domain objects.
+5. Use Smart UI only for simple applications where rich domain abstraction, reuse, integration, and deep business rules are not important.
+
+### Anti-patterns (MUST NOT)
+- UI screens, database tables, or framework annotations defining the domain vocabulary
+- UI, application coordination, jobs, or scripts carrying domain rules while domain objects stay passive
+- choosing Smart UI when the business behavior needs reuse or abstraction
+
+---

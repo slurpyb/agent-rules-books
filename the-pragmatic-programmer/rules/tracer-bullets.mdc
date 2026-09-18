@@ -1,0 +1,16 @@
+---
+description: Apply when building a new capability, validating architecture early, choosing between a thin end-to-end slice and isolated layer work, or refining from working feedback instead of upfront prediction.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Tracer Bullets and Iterative Delivery
+
+1. Prefer a thin end-to-end slice over a pile of isolated pieces.
+2. Use tracer bullets to validate architecture, integration, and assumptions early.
+3. Keep the first slice simple but real enough to prove the path.
+4. Refine from working feedback instead of predicting everything up front.
+
+Anti-patterns (MUST NOT):
+- building many layers before anything runs end to end
+- treating prototypes as production without hardening
+- waiting for perfect certainty before integrating

@@ -1,0 +1,17 @@
+---
+description: Apply when applying the Boy Scout Rule, scoped cleanup, or change discipline on touched code.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Change Process
+
+For every non-trivial task:
+
+1. Understand the intent and affected behavior.
+2. Identify the simplest correct change.
+3. Improve names before adding comments.
+4. Keep edits localized when possible.
+5. Add or update tests as needed.
+6. Run relevant validation.
+7. Review the diff for readability, duplication, and unnecessary complexity.
+8. Ensure the final code is cleaner than before.

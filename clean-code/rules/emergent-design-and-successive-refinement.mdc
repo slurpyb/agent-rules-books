@@ -1,0 +1,12 @@
+---
+description: Apply when letting design emerge through successive refinement rather than speculative abstraction.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Emergent design and successive refinement
+
+- Prefer designs that run all relevant tests, remove duplication, express intent, and use the fewest necessary classes and methods.
+- Refine code through working drafts rather than expecting the first version to be clean.
+- When code starts rough, keep improving names, structure, and tests until intent is clear.
+- Do not start a grand redesign when incremental refinement can recover the design safely.
+- Use the Boy Scout Rule on touched code, but keep cleanup proportional to the task.

@@ -1,0 +1,16 @@
+---
+description: Apply when designing module boundaries, separating policy from mechanism, reducing hidden coupling through globals or shared mutable state, or when one change forces unrelated edits elsewhere.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Orthogonality
+
+1. Keep components independent so one change does not force unrelated changes elsewhere.
+2. Minimize hidden couplings through globals, ambient context, or shared mutable state.
+3. Avoid overlapping responsibilities between modules.
+4. Separate policy from mechanism, data from presentation, orchestration from computation.
+
+Anti-patterns (MUST NOT):
+- one change requiring edits in many unrelated places
+- one module knowing too much about internal details of others
+- shared utility modules creating sideways coupling everywhere

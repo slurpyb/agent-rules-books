@@ -1,0 +1,15 @@
+---
+description: Apply when designing errors, keeping happy paths clear, or isolating error handling from main logic.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Error handling
+
+- Design error handling deliberately.
+- Keep the happy path easy to read.
+- Provide enough context in error messages for diagnosis.
+- Use error types or exception classes that support caller decisions.
+- Do not return `null` or equivalent absence sentinels when a safer model exists.
+- Do not pass `null` or equivalent invalid states unless the API explicitly models that case.
+- Prefer exceptions, special cases, empty objects, or explicit optionality according to the codebase's language and conventions.
+- Make resource cleanup and shutdown paths correct and visible.

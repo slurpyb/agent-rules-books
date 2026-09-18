@@ -1,0 +1,14 @@
+---
+description: Apply Refactoring guidance on rules for working with conditionals when the current task involves rules for working with conditionals concerns.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Rules for Working with Conditionals
+
+1. Replace repeated branching on type or status with stronger modeling when useful.
+2. Use lookup tables for stable mapping logic.
+3. Replace nested if/else pyramids with guard clauses, extracted predicates, or strategies when that reduces branching complexity.
+4. Keep explicit conditionals when they are simple and honest.
+5. Never introduce polymorphism merely to avoid a small local conditional.
+
+---

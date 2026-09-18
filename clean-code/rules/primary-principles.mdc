@@ -1,0 +1,34 @@
+---
+description: Apply as the Clean Code bias when choosing readability, Boy Scout cleanup, local reasoning, or long-term simplicity over cleverness.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Primary Principles
+
+## Priority and behavior
+
+- Treat every unqualified rule in this file as `MUST`; treat `Prefer` as `SHOULD`; treat `Do not`, `Avoid`, and `Never` as `MUST NOT` unless the user explicitly overrides it.
+- Prefer readability, maintainability, correctness, and safe change over cleverness or speed hacks.
+- Optimize for the next human reader.
+- When trade-offs exist, choose the option that reduces long-term complexity.
+- Never preserve bad structure just because it already exists.
+- Apply the Boy Scout Rule: leave touched code cleaner than you found it.
+
+## Core clean code principles
+
+- Write code primarily for humans, not just for execution.
+- Keep code simple, direct, and easy to modify.
+- Avoid accidental complexity.
+- Avoid surprising behavior.
+- Prefer explicit intent over implicit magic.
+- Prefer local reasoning: a reader should understand code with minimal jumping across files.
+- Reduce technical debt instead of moving it around.
+
+## Hard rules
+
+- Do not introduce misleading names.
+- Do not keep duplicated logic without a strong reason.
+- Do not add comments where better code would remove the need.
+- Do not mix querying with mutation without a strong reason.
+- Do not silently broaden scope beyond the requested task.
+- Do not leave touched code less readable than before.

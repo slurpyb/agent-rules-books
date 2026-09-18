@@ -1,0 +1,24 @@
+---
+description: Apply when naming classes, functions, variables, or modules; avoiding encodings, synonyms, and misleading identifiers.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Naming rules
+
+- Use intention-revealing names.
+- Names must explain purpose, role, or behavior without requiring extra comments.
+- Avoid misleading names, overloaded meanings, and visually confusable identifiers.
+- Make distinctions meaningful. Do not create names that differ only cosmetically.
+- Use pronounceable, searchable names.
+- Avoid abbreviations unless they are established domain or platform standards.
+- Avoid encodings in names, including type prefixes, implementation hints, and Hungarian notation.
+- Avoid unnecessary context in identifiers.
+- Add context through modules, classes, namespaces, or types when that is cleaner than longer names.
+- Use one word per concept across the codebase.
+- Do not use multiple synonyms for the same operation or concept.
+- Do not reuse a familiar word for a different meaning.
+- Class, type, and module names should be nouns or noun phrases.
+- Function and method names should be verbs or verb phrases.
+- Use problem-domain names for domain concepts.
+- Use solution-domain names for technical concepts.
+- Do not use cute, funny, cryptic, or private-joke names.

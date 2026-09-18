@@ -1,0 +1,31 @@
+---
+description: Apply when reusing analysis/model patterns without forcing them where they do not fit.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Analysis and Model Patterns
+
+### Analysis Patterns
+1. Use prior domain modeling knowledge when it fits the current domain.
+2. Do not force an analysis pattern when local language contradicts it.
+3. Adapt patterns to the bounded context rather than importing them wholesale.
+4. Search domain literature, prior art, and established formalisms when the team lacks concepts for a good model.
+5. Use exploration teams for hard modeling problems only when their findings are tested in code and returned to the main team.
+
+### Design Patterns in the Model
+Use design patterns only when they express the domain model:
+- `Strategy` or `Policy` for interchangeable domain policies.
+- `Composite` for part-whole structures that domain experts recognize.
+- Avoid patterns that optimize implementation while hiding model meaning.
+
+### Required behavior (MUST)
+- Reach for established formalisms when the domain already has mature concepts.
+- Make pattern names subordinate to domain names.
+- Prefer domain-specific names over generic pattern names in public APIs.
+
+### Anti-patterns (MUST NOT)
+- Applying design patterns because they are familiar rather than because the model needs them
+- Naming domain objects after patterns instead of business concepts
+- Importing a reference model without validating it against local domain language
+
+---

@@ -1,0 +1,62 @@
+---
+description: Apply when deciding whether work is true refactoring, starting structural improvement, or separating behavior change from cleanup.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Primary Directive and Scope
+
+## Purpose
+
+This repository follows the discipline of **Refactoring** in the sense of Martin Fowler:
+improve the internal structure of code **without changing its observable behavior**.
+
+All code generation, edits, and reviews must optimize for:
+- small behavior-preserving changes
+- clearer names and simpler control flow
+- lower duplication
+- smaller units of responsibility
+- explicit movement from bad design toward good design
+- steady design improvement as part of daily work
+
+This file is a binding engineering policy: `MUST` is binding, `SHOULD` is a strong default, and `MUST NOT` is forbidden.
+
+---
+
+## Primary Directive
+
+When modifying existing code, do **not** start by rewriting large areas.
+Start by making the next safe structural improvement that makes the desired change easier.
+
+Prefer:
+1. establish a safety net
+2. make a preparatory refactoring
+3. make the functional change
+4. refactor again if needed
+
+Reject changes that bundle large functional changes with unrelated structural churn.
+
+---
+
+## What Counts as Refactoring
+
+Refactoring here means:
+- changing structure without changing external behavior
+- applying small, composable transformations
+- removing code smells before or during feature work
+- making the next change easier
+- improving readability, locality, and testability
+
+Refactoring here does **not** mean:
+- large rewrites
+- unverified cleanup
+- “modernization” with unclear behavioral impact
+- renaming everything at once
+- mixing architecture migration, feature work, and cleanup in one uncontrolled patch
+
+---
+
+## Final Instruction
+
+When uncertain, choose the next **small, behavior-preserving transformation**
+that makes the requested change easier and the code easier to understand.
+Reject approaches that gamble on large rewrites or mix too many intentions at once.

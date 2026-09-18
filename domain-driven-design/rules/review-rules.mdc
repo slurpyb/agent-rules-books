@@ -1,0 +1,51 @@
+---
+description: Apply when reviewing domain changes for language drift, boundary leaks, or anemic models.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Review Rules
+
+When reviewing or modifying code, actively look for:
+
+### Language problems
+- vague technical names replacing business terms
+- synonyms for one concept
+- one term used with multiple meanings
+
+### Model problems
+- passive entities
+- missing value objects
+- invalid construction
+- missing invariants
+- domain logic spread across delivery handlers, application coordination, or repositories
+
+### Boundary problems
+- bounded context bleeding
+- foreign models leaking inward
+- shared “common domain” abstractions destroying language clarity
+- missing context relationship strategy
+- implicit shared kernels with no governance
+
+### Aggregate problems
+- oversized aggregates
+- aggregate roots exposing internal state changes
+- direct object references across aggregates where identity should be used
+- transactions spanning many aggregates by default
+
+### Service problems
+- domain services that are really technical helpers
+- god services
+- application services replacing the whole domain model
+
+### Infrastructure problems
+- persistence-first modeling
+- transport shapes defining the domain
+- persistence rules embedded in business logic
+
+### Strategic problems
+- core domain hidden behind generic infrastructure
+- supporting subdomains over-modeled while core logic remains weak
+- no visible distillation or large-scale structure where the system complexity requires one
+- context map decisions undocumented in code or tests
+
+---

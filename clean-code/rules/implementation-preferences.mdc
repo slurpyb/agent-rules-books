@@ -1,0 +1,15 @@
+---
+description: Apply when choosing everyday implementation defaults for clarity, simplicity, and safe change.
+alwaysApply: false
+---
+
+# OBEY Clean Code by Robert C. Martin — Implementation preferences
+
+- Prefer explicit, boring, maintainable solutions.
+- Prefer standard library and existing project patterns over new dependencies.
+- Do not add a dependency unless it clearly reduces overall complexity.
+- Reuse established project conventions unless they conflict with these rules or the user explicitly asks otherwise.
+- Keep interfaces small.
+- Keep state transitions obvious.
+- Avoid premature optimization.
+- Optimize only when there is evidence or a known requirement.

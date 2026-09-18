@@ -1,0 +1,12 @@
+---
+description: Apply when shortening the path from change to signal, choosing when to run tests, making failures visible, or preferring cheap early feedback over late expensive surprises.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Feedback Loops
+
+1. Shorten the time between change and feedback.
+2. Run relevant tests early and often.
+3. Use automated checks where they reduce real risk.
+4. Make failure visible fast.
+5. Prefer a cheap early signal over a late expensive surprise.

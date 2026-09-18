@@ -1,0 +1,11 @@
+---
+description: Apply when detecting, propagating, classifying, or recovering from errors; preserving diagnostic context; distinguishing retryable vs permanent failures; or containing failure so it does not collapse the whole system.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Error Handling and Recovery
+
+1. Detect errors close to their source.
+2. Do not discard useful error context.
+3. Let callers distinguish retryable, recoverable, and permanent failures where relevant.
+4. Fail loudly enough to diagnose, but with boundaries that prevent system-wide collapse.

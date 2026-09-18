@@ -5,7 +5,7 @@
     "name": "Maciej Ciemborowicz"
   },
   "metadata": {
-    "description": "Agent rules and skills distilled from classic software engineering books — refactoring, architecture, DDD, and code quality."
+    "description": "Agent rules and skills distilled from classic software engineering books \u2014 refactoring, architecture, DDD, and code quality."
   },
   "plugins": [
     {
@@ -20,7 +20,7 @@
     },
     {
       "name": "clean-code",
-      "description": "Apply Robert C. Martin-inspired clean code rules when improving readability, naming, function design, responsibilities, or testable everyday code.",
+      "description": "Clean Code skill, granular Cursor rules, and a clean-code-reviewer subagent for Robert C. Martin-inspired readability, naming, function shape, and test discipline.",
       "source": "./clean-code"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "name": "domain-driven-design",
-      "description": "Apply Eric Evans-inspired DDD rules when modeling a complex domain, defining bounded contexts, protecting ubiquitous language, or designing aggregates.",
+      "description": "Domain-Driven Design skill, granular Cursor rules, and a ddd-reviewer subagent for Eric Evans-inspired ubiquitous language, bounded contexts, aggregates, and model-driven design.",
       "source": "./domain-driven-design"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "name": "refactoring",
-      "description": "Apply Martin Fowler-inspired refactoring rules when improving existing code structure while preserving observable behavior.",
+      "description": "Refactoring skill, granular Cursor rules, and a refactoring-reviewer subagent for Martin Fowler-inspired behavior-preserving cleanup and smell-driven restructuring.",
       "source": "./refactoring"
     },
     {
@@ -70,7 +70,7 @@
     },
     {
       "name": "the-pragmatic-programmer",
-      "description": "Apply Hunt and Thomas-inspired pragmatic programming rules when improving engineering judgment, feedback loops, DRY knowledge, orthogonality, automation, or adaptability.",
+      "description": "Pragmatic Programmer skill, granular Cursor rules, and a pragmatic-reviewer subagent for Hunt and Thomas-inspired engineering judgment, DRY knowledge, orthogonality, automation, and feedback loops.",
       "source": "./the-pragmatic-programmer"
     },
     {

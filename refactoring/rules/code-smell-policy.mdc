@@ -1,0 +1,58 @@
+---
+description: Apply when detecting or treating duplicated code, long functions, long parameter lists, divergent change, shotgun surgery, feature envy, data clumps, or related smells.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Code Smell Policy
+
+When modifying code, actively look for these smells.
+
+### Duplicated Code
+- Duplicate logic is a default target for elimination.
+- Remove duplication by extracting shared behavior, not by introducing vague utility dumping grounds.
+- Do not abstract coincidental similarity.
+
+### Long Functions
+- Split long functions when they mix responsibilities, levels of abstraction, or phases of work.
+- Extract meaningful chunks with names that explain intent.
+- Do not create micro-method noise with no explanatory value.
+
+### Long Parameter Lists
+- Replace repeated clumps with parameter objects or richer domain objects where appropriate.
+- Remove boolean flags that switch behavior.
+- Avoid signatures that require callers to memorize argument order.
+
+### Global Data and Hidden Dependencies
+- Reduce reliance on globals, singletons, and ambient context.
+- Make dependencies explicit where possible.
+- Refactor toward injection, parameters, or clear ownership.
+
+### Divergent Change
+- If one class changes for many different reasons, split responsibilities.
+- Separate business logic, formatting, transport, persistence, and integration concerns.
+
+### Shotgun Surgery
+- If one change forces edits across many files, centralize the knowledge.
+- Introduce a better boundary or clearer ownership.
+
+### Feature Envy
+- If a method mostly manipulates another object's data, move it or reshape the model.
+- Put behavior near the data or concept it belongs to.
+
+### Data Clumps and Primitive Obsession
+- Replace repeated primitive bundles with meaningful types.
+- Give recurring business concepts names and validation.
+
+### Switch Statements and Conditionals
+- Reduce repeated branching on type or mode when polymorphism, tables, strategies, or better data structures fit.
+- Do not replace a single honest conditional with needless indirection.
+
+### Temporary Fields and Weird Lifecycles
+- Remove fields that exist only for unusual code paths when a separate object or clearer phase model is better.
+- Prefer modeling states explicitly over half-initialized objects.
+
+### Middle Man and Speculative Generality
+- Remove forwarding layers that add no value.
+- Delete abstractions created “just in case” if they are not earning their keep.
+
+---

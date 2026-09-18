@@ -1,0 +1,35 @@
+---
+description: Apply when spotting rewrite-as-refactoring, mixed feature+cleanup patches, deleted tests, or unverified modernization.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Forbidden Patterns
+
+Do not generate or keep these patterns unless explicitly required and justified.
+
+### Big-Bang Rewrite
+- replacing a working subsystem wholesale to “clean it up”
+- rewriting before understanding current behavior
+- changing structure and behavior in one giant move
+
+### Mixed-Intent Patches
+- feature work mixed with huge unrelated renames
+- behavior changes hidden inside cleanup
+- code motion that makes review impossible
+
+### Abstracting Too Early
+- introducing interfaces or strategy hierarchies before a second real need appears
+- creating common libraries for one caller
+- replacing understandable duplication with unclear shared code
+
+### Refactoring Theater
+- renaming things while deeper design problems remain untouched
+- introducing patterns instead of removing complexity
+- creating more files, layers, or wrappers without improving changeability
+
+### Untested Structural Surgery
+- large refactors without any safety net
+- “cleanup” on fragile code with no verification strategy
+- assuming behavior is obvious when it is not
+
+---

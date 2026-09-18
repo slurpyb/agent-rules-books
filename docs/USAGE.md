@@ -257,6 +257,7 @@ Import the shared root `AGENTS.md` baseline by adding this line to `CLAUDE.md` i
 - `.agents/skills/` or `.cursor/skills/` for Agent Skills
 - `.cursor/rules/*.mdc` project rules
 - rule types: `Always Apply`, `Apply Intelligently`, `Apply to Specific Files`, `Apply Manually`
+- `.cursor/agents/` custom subagents (also packaged inside Cursor plugins under `agents/`)
 - root `AGENTS.md` as a simple alternative
 - user rules
 - `@rule-name` for explicit manual rule application
@@ -310,6 +311,19 @@ Suggested split:
 - `payments.mdc`: `Apply to Specific Files` for `payments/**`
 - `refactor.mdc`: `Apply Manually` for explicit refactoring passes
 - `ddd.mdc`: `Apply Intelligently` for modeling-heavy tasks
+
+### Worked examples: Cursor book plugins
+
+These book directories ship as full Cursor plugins (skill + Apply Intelligently rules + read-only review subagent):
+
+| Book | Skill | Rules | Subagent |
+| --- | --- | --- | --- |
+| [The Pragmatic Programmer](../the-pragmatic-programmer/) | [`skills/the-pragmatic-programmer/`](../the-pragmatic-programmer/skills/the-pragmatic-programmer/) | [`rules/`](../the-pragmatic-programmer/rules/) | [`pragmatic-reviewer`](../the-pragmatic-programmer/agents/pragmatic-reviewer.md) |
+| [Refactoring](../refactoring/) | [`skills/refactoring/`](../refactoring/skills/refactoring/) | [`rules/`](../refactoring/rules/) | [`refactoring-reviewer`](../refactoring/agents/refactoring-reviewer.md) |
+| [Clean Code](../clean-code/) | [`skills/clean-code/`](../clean-code/skills/clean-code/) | [`rules/`](../clean-code/rules/) | [`clean-code-reviewer`](../clean-code/agents/clean-code-reviewer.md) |
+| [Domain-Driven Design](../domain-driven-design/) | [`skills/domain-driven-design/`](../domain-driven-design/skills/domain-driven-design/) | [`rules/`](../domain-driven-design/rules/) | [`ddd-reviewer`](../domain-driven-design/agents/ddd-reviewer.md) |
+
+Each rule sets `alwaysApply: false` and a concrete `description` so Cursor can attach topic pressure by task. Use the skill for implementation work, the rules for opportunistic attachment, and the reviewer subagent for an independent checklist pass without flooding the main chat.
 
 ### Use Cursor this way when
 

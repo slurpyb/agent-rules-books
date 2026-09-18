@@ -1,0 +1,12 @@
+---
+description: Apply when naming symbols, writing comments or docs, explaining decision rationale, or treating code as communication to future maintainers rather than cleverness.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Naming and Communication
+
+1. Code is communication first.
+2. Use names that reflect domain meaning and developer intent.
+3. Prefer clarity over cleverness.
+4. Write comments or docs where they convey decision rationale, contracts, or non-obvious behavior.
+5. Writing is part of engineering, not overhead.

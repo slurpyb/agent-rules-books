@@ -1,0 +1,25 @@
+---
+description: Apply when encapsulating complex creation while protecting invariants.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Factories
+
+### Use factories when
+- creation is complex
+- construction has business rules
+- valid creation requires multiple collaborating values
+- the creation itself has domain meaning
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. Factories must create valid objects.
+2. Factories must encode domain creation rules, not technical object assembly.
+3. Clients and mappers must not contain business construction logic.
+4. Choose the factory site where creation ownership fits the model.
+5. Use constructors directly when creation is simple, intention-revealing, and does not expose complex invariants.
+6. Treat reconstitution from storage separately from new-object creation.
+
+### Anti-patterns (MUST NOT)
+- Building invalid objects first and fixing them later
+- Letting endpoints stitch together aggregates directly
+- Using a factory only to hide a trivial constructor

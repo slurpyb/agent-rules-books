@@ -1,0 +1,33 @@
+---
+description: Apply as a final DDD gate: language, context, aggregates, invariants, and infrastructure separation.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Change Checklist
+
+## Review Checklist
+
+Before finalizing any change, verify:
+
+- Is the bounded context clear?
+- Does the code use the ubiquitous language consistently?
+- Are important concepts modeled explicitly?
+- Are value objects used where primitives hide meaning?
+- Are entities protecting valid transitions?
+- Are aggregate boundaries clear and small enough?
+- Are cross-aggregate references by identity unless stronger consistency is required?
+- Are repositories aligned to aggregates rather than tables?
+- Are specifications, policies, or explicit constraints used where repeated rules need names?
+- Are application services orchestrating rather than owning all rules?
+- Is the domain model protected from transport, persistence, and vendor models?
+- Are context boundaries translated explicitly?
+- Is the context map relationship clear for integrations?
+- Is the core domain visible and protected from generic mechanisms?
+- Are large-scale structures helping rather than freezing the model?
+- Did we avoid god services?
+- Did we avoid passive domain objects where the domain is complex?
+- Did we avoid over-modeling where the domain is simple?
+
+If any answer is no, revise before shipping.
+
+---

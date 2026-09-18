@@ -1,0 +1,26 @@
+---
+description: Apply when aligning code, tests, and discussion language with the domain model.
+alwaysApply: false
+---
+
+# OBEY Domain-Driven Design by Eric Evans — Model-Driven Design
+
+### Rules (MUST unless marked SHOULD or MUST NOT)
+1. The implemented design must reflect the model used in discussion.
+2. If the model cannot guide code, refine the model or the code until they align.
+3. Domain objects must represent behavior and meaning, not just persistence state.
+4. Keep modelers close to implementation. Do not separate analysis from coding so far that the model becomes theoretical.
+
+### Required behavior (MUST)
+- Make important model concepts visible in classes, functions, modules, tests, and interfaces.
+- Prefer executable examples and tests over disconnected documentation.
+- Keep diagrams and documents lightweight, current, and tied to code.
+- Use explanatory models only to teach or reason; do not confuse them with the implementation model unless they are intended to drive code.
+
+### Anti-patterns (MUST NOT)
+- A design document that uses different names than the code
+- Analysts producing models that developers cannot or do not implement
+- Code that follows framework conventions while ignoring the domain model
+- Diagrams that become authoritative after the code and domain understanding have changed
+
+---

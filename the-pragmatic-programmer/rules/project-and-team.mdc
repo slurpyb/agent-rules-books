@@ -1,0 +1,13 @@
+---
+description: Apply when shaping team process, shared responsibility, stakeholder expectations, pride in craft, testing breadth, documentation as engineering work, or rejecting ceremony that does not improve outcomes.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Project and Team
+
+1. Build pragmatic teams around shared responsibility, automation, fast feedback, and visible quality.
+2. Test unit behavior, integration, validation and verification, resource exhaustion, errors and recovery, performance, usability, and tests themselves where relevant.
+3. Treat writing as engineering work: docs, comments, commit messages, scripts, and tests must communicate intent.
+4. Set expectations explicitly with users and stakeholders.
+5. Take pride in code, tests, documentation, and generated artifacts.
+6. Be skeptical of methods, diagrams, and ceremonies that do not improve the work.

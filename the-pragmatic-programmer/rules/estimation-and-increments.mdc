@@ -1,0 +1,11 @@
+---
+description: Apply when planning work, estimating under uncertainty, breaking delivery into testable increments, or making risk visible early instead of hiding large unfinished progress.
+alwaysApply: false
+---
+
+# OBEY The Pragmatic Programmer — Estimation and Increments
+
+1. Break work into pieces that can be reasoned about, tested, and corrected.
+2. Keep plans and estimates honest about uncertainty.
+3. Prefer small deliverable increments to large hidden progress.
+4. Make risk visible early.

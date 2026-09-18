@@ -1,0 +1,15 @@
+---
+description: Apply when deciding whether to stop refactoring, avoid gold-plating, or leave further cleanup for later.
+alwaysApply: false
+---
+
+# OBEY Refactoring by Martin Fowler — Stopping Rules
+
+Stop refactoring when:
+- the requested change is easy to implement
+- the main smells blocking change are removed
+- further cleanup would become speculative
+- the next abstraction is not yet justified
+- readability and local changeability are clearly improved
+
+---
